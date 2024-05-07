@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Dropdown from '../components/Dropdown/Dropdown';
+import Dropdown from '../Dropdown/Dropdown';
 
 
 const NavItem = ({ obj, index }) => {

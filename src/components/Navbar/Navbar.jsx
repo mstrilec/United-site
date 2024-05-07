@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/Logo.png'
 import { navbarList } from '../../navbarList'
-import NavItem from '../../NavItem/NavItem'
+import NavItem from '../NavItem/NavItem'
 
 const Navbar = () => {
   return (
