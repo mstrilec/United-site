@@ -1,0 +1,13 @@
+.header {
+  margin: 0 auto;
+  display: flex;
+  width: 1440px;
+  padding: 32px 106px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 16px;
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Maison;
+  src: url('./fonts/MaisonNeueBook.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Maison;
+}
+
+body {
+  height: 100vh;
+}
