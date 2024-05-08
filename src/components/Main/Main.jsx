@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Button from '../Button/Button'
 import './Main.css'
 import arrowDiagonal from '../../assets/arrowDiagonal.svg'
@@ -7,15 +7,55 @@ import user2 from '../../assets/users/Avatar2.png'
 import user3 from '../../assets/users/Avatar3.png'
 import user4 from '../../assets/users/Avatar4.png'
 import Product from '../Product/Product'
-import rocket from '../../assets/rocket.png'
-import target from '../../assets/target.png'
-import dandruff from '../../assets/dandruff.png'
+import rocket from '../../assets/rocket.svg'
+import target from '../../assets/target.svg'
+import dandruff from '../../assets/dandruff.svg'
 import telegram from '../../assets/Telegram.svg'
 import facebook from '../../assets/Facebook.svg'
 import tradePc from '../../assets/TradePC.png'
 import tradeMobile from '../../assets/TradeMobile.png'
 
 const Main = () => {
+  const [timerDays, setTimerDays] = useState('00')
+  const [timerHours, setTimerHours] = useState('00')
+  const [timerMinutes, setTimerMinutes] = useState('00')
+  const [timerSeconds, setTimerSeconds] = useState('00')
+
+  let interval = useRef();
+
+  const startTimer = () => {
+    const countdownDate = new Date('May 13, 2024 00:00:00').getTime();
+  
+    interval.current = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+  
+      const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+      const hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+      const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+      const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+
+  
+      if (distance < 0) {
+        clearInterval(interval.current)
+      } else {
+        setTimerDays(days)
+        setTimerHours(hours)
+        setTimerMinutes(minutes)
+        setTimerSeconds(seconds)
+      }
+  
+    }, 1000)
+  };
+
+  useEffect(() => {
+    startTimer();
+
+    return () => {
+      clearInterval(interval.current)
+    };
+  });
+
   return (
     <main className='main'>
       <div className='main-block'>
@@ -52,7 +92,32 @@ const Main = () => {
       </div>
 
       <section className="main-launching">
-          <h2 className='main-launching-text'>Launching in</h2>
+        <h2 className='main-launching-text'>Launching in</h2>
+
+        <div className='timer-container'>
+          <section className='timer-section'>
+            <p className='timer-section-number'>{timerDays}</p>
+            <p className='timer-section-text'>Days</p>
+          </section>
+          <section className='timer-section'>
+            <p className='timer-section-number'>{timerHours}</p>
+            <p className='timer-section-text'>Hours</p>
+          </section>
+          <section className='timer-section'>
+            <p className='timer-section-number'>{timerMinutes}</p>
+            <p className='timer-section-text'>Minutes</p>
+          </section>
+          <section className='timer-section'>
+            <p className='timer-section-number'>{timerSeconds}</p>
+            <p className='timer-section-text'>Seconds</p>
+          </section>
+        </div>
+
+        <Button
+          name='Join now'
+          color='#277F4D'
+          textColor='#FFF'
+        />
       </section>
 
       <section className='main-products'>
