@@ -11,3 +11,7 @@
   display: flex;
   gap: 16px;
 }
+
+.header-button-link {
+  text-decoration: none;
+}

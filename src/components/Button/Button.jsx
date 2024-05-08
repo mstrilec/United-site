@@ -10,14 +10,16 @@ const Button = ({
   textColor,
   rightSvg,
   leftSvg,
+  width,
+  span,
 }) => {
   return (
     <div className='button'>
       <ReactSVG src={vectorLeft} className='vector-left' style={{color: color}} />
-      <button className='btn' style={{background: color, color: textColor}}>
+      <button className='btn' style={{background: color, color: textColor, width: width}}>
       {leftSvg ? (
           <img src={leftSvg} alt='leftSvg' className='leftSvg' />
-        ) : null} {name} {rightSvg ? (
+        ) : null} {name} {span ? (<span className='navbar-item-soon'>{span}</span>) : null} {rightSvg ? (
           <img src={rightSvg} alt='rightSvg' className='rightSvg' />
         ) : null}
       </button>

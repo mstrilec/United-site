@@ -121,7 +121,7 @@
 
 .timer-section {
   border-radius: 3px;
-  border-right: 1px solid #616161; /* Додаємо границю справа */
+  border-right: 1px solid #616161;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,7 +179,7 @@
 .main-products-text {
   margin-top: 106px;
   margin-bottom: 80px;
-  color: var(--neutral-70, #131514);
+  color: #131514;
   text-align: center;
 
   font-size: 56px;
@@ -191,7 +191,7 @@
 
 .products {
   display: flex;
-  gap: 24px;
+  gap: 88px;
   margin-bottom: 88px;
 }
 

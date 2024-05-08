@@ -144,7 +144,12 @@ const Main = () => {
               img={rocket}
               title='United Benefits'
               subtitle='Massive Airdrops, Free Participation'
-              text='Automatically participate in massive airdrops and enjoy trading fee discounts'
+              text={
+                <>
+                  Automatically participate in massive airdrops and <br/>
+                  enjoy trading fee discounts
+                </>
+              }
             />
           </div>
         </div>
