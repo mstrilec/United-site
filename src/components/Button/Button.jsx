@@ -16,9 +16,9 @@ const Button = ({
       <ReactSVG src={vectorLeft} className='vector-left' style={{color: color}} />
       <button className='btn' style={{background: color, color: textColor}}>
       {leftSvg ? (
-          <img src={leftSvg} alt='leftSvg' />
+          <img src={leftSvg} alt='leftSvg' className='leftSvg' />
         ) : null} {name} {rightSvg ? (
-          <img src={rightSvg} alt='rightSvg' />
+          <img src={rightSvg} alt='rightSvg' className='rightSvg' />
         ) : null}
       </button>
       <ReactSVG src={vectorRight} className='vector-right' style={{color: color}} />

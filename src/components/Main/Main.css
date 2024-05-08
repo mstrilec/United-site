@@ -1,9 +1,20 @@
 .main-block {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 157px;
+  margin-left: calc((100% - 1440px) / 2 + 106px);
+}
+
+.trade-mobile {
+  position: absolute;
+  right: 20%;
+  top: 65%;
+  z-index: -1;
+}
+
+.trade-pc {
+  z-index: -2;
 }
 
 .main-title-subtitle {
@@ -49,7 +60,7 @@
 .main-investing-block {
   display: flex;
   justify-content: space-between;
-  width: -webkit-fill-available;
+  margin-top: 48px;
 }
 
 .main-users-block {
@@ -135,6 +146,11 @@
   margin-bottom: 88px;
 }
 
+.product-item {
+  display: flex;
+  align-items: center;
+}
+
 .main-join-block {
   display: flex;
   flex-direction: column;
@@ -142,7 +158,7 @@
   margin-top: 106px;
   background: #319f60;
   width: 100%;
-  height: 602px;
+  height: 475px;
 }
 
 .main-join-title {

@@ -12,36 +12,43 @@ import target from '../../assets/target.png'
 import dandruff from '../../assets/dandruff.png'
 import telegram from '../../assets/Telegram.svg'
 import facebook from '../../assets/Facebook.svg'
+import tradePc from '../../assets/TradePC.png'
+import tradeMobile from '../../assets/TradeMobile.png'
 
 const Main = () => {
   return (
     <main className='main'>
       <div className='main-block'>
-        <div className="main-title-subtitle">
-          <h2 className='main-title'>Low fees,<br /><span className='main-title-second'>high perfomance</span></h2>
-          <p className='main-subtitle'>Join the new era of copy trading with 100k active users worldwide and trade 150+ crypto
-    currencies with a trusted trader.</p>
-        </div>
-        <div className='main-investing-block'>
-          <Button
-            name='Start investing'
-            color='#277F4D'
-            textColor='#FFF'
-            rightSvg={arrowDiagonal}
-          />
-          <div className="main-users">
-            <div className="users">
-              <img src={user1} alt="User" className='user1' />
-              <img src={user2} alt="User" className='user2' />
-              <img src={user3} alt="User" className='user3' />
-              <img src={user4} alt="User" className='user4' />
-            </div>
-            <div className='main-users-block'>
-              <p className='main-users-text'>100k+</p>
-              <p className='main-users-subtext'>active users</p>
+        <div className="main-block-left-side">
+          <div className="main-title-subtitle">
+            <h2 className='main-title'>Low fees,<br /><span className='main-title-second'>high perfomance</span></h2>
+            <p className='main-subtitle'>Join the new era of copy trading with 100k active users worldwide and trade 150+ crypto
+            currencies with a trusted trader.</p>
+          </div>
+          <div className='main-investing-block'>
+            <Button
+              name='Start investing'
+              color='#277F4D'
+              textColor='#FFF'
+              rightSvg={arrowDiagonal}
+            />
+            <div className="main-users">
+              <div className="users">
+                <img src={user1} alt="User" className='user1' />
+                <img src={user2} alt="User" className='user2' />
+                <img src={user3} alt="User" className='user3' />
+                <img src={user4} alt="User" className='user4' />
+              </div>
+              <div className='main-users-block'>
+                <p className='main-users-text'>100k+</p>
+                <p className='main-users-subtext'>active users</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <img src={tradeMobile} alt="Trade" className='trade-mobile' />
+        <img src={tradePc} alt="Trade" className='trade-pc' />
       </div>
 
       <section className="main-launching">
@@ -51,24 +58,30 @@ const Main = () => {
       <section className='main-products'>
         <h2 className='main-products-text'>Discover Our Products</h2>
         <div className="products">
-          <Product 
-            img={target}
-            title='Copy Trading'
-            subtitle='No. 1 In Copy Execution Time'
-            text='Best orderflow traders on our platform'
-          />
-          <Product 
-            img={dandruff}
-            title='Spot'
-            subtitle='Abundant Crypto. 0 Trading Fees'
-            text='Fast Listings, Diverse Trading Pairs & Robust Trading Depth'
-          />
-          <Product 
-            img={rocket}
-            title='United Benefits'
-            subtitle='Massive Airdrops, Free Participation'
-            text='Automatically participate in massive airdrops and enjoy trading fee discounts'
-          />
+          <div className="product-item">
+            <Product 
+              img={target}
+              title='Copy Trading'
+              subtitle='No. 1 In Copy Execution Time'
+              text='Best orderflow traders on our platform'
+            />
+          </div>
+          <div className="product-item">
+            <Product 
+              img={dandruff}
+              title='Spot'
+              subtitle='Abundant Crypto. 0 Trading Fees'
+              text='Fast Listings, Diverse Trading Pairs & Robust Trading Depth'
+            />
+          </div>
+          <div className="product-item">
+            <Product 
+              img={rocket}
+              title='United Benefits'
+              subtitle='Massive Airdrops, Free Participation'
+              text='Automatically participate in massive airdrops and enjoy trading fee discounts'
+            />
+          </div>
         </div>
         <Button
           name='Join now'
