@@ -3,6 +3,7 @@ import './Footer.css'
 import footerLogo from '../../assets/footer-logo.png'
 import footerFb from '../../assets/facebook-footer.svg'
 import footerTg from '../../assets/telegram-footer.svg'
+import arrowRight from '../../assets/arrow-right.svg'
 import { ReactSVG } from 'react-svg'
 
 const Footer = () => {
@@ -16,10 +17,10 @@ const Footer = () => {
             <h6 className="nav-item-title">About</h6>
             <ul className='nav-item-list'>
               <li className='nav-item-list-item'>Markets</li>
-              <li className='nav-item-list-item'>Buy Crypto</li>
+              <li className='nav-item-list-item'>Buy Crypto<ReactSVG src={arrowRight} /></li>
               <li className='nav-item-list-item'>Markets</li>
-              <li className='nav-item-list-item'>Spot</li>
-              <li className='nav-item-list-item'>Futures</li>
+              <li className='nav-item-list-item'>Spot<ReactSVG src={arrowRight} /></li>
+              <li className='nav-item-list-item'>Futures<ReactSVG src={arrowRight} /></li>
               <li className='nav-item-list-item'>Learn<span className='navbar-item-soon'>coming soon</span></li>
             </ul>
           </div>

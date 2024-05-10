@@ -14,6 +14,7 @@ import telegram from '../../assets/Telegram.svg'
 import facebook from '../../assets/Facebook.svg'
 import tradePc from '../../assets/TradePC.png'
 import tradeMobile from '../../assets/TradeMobile.png'
+import { ReactSVG } from 'react-svg'
 
 const Main = () => {
   const [timerDays, setTimerDays] = useState('00')

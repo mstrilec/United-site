@@ -17,11 +17,13 @@ const Header = () => {
             textColor='#144026'
           />
         </Link>
-        <Button
-          name='Sign in'
-          color='#277F4D'
-          textColor='#FFF'
-        />
+        <Link to='/signup' className='header-button-link'>
+          <Button
+            name='Sign in'
+            color='#277F4D'
+            textColor='#FFF'
+          />
+        </Link>
       </div>
     </header>
   )

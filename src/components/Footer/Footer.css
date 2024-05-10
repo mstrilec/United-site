@@ -70,3 +70,9 @@
   line-height: 140%;
   letter-spacing: 0.24px;
 }
+
+.nav-item-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

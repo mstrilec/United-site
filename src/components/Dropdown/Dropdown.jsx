@@ -1,12 +1,15 @@
+import { Link } from 'react-router-dom';
 import './Dropdown.css'
 
 const Dropdown = ({ submenus }) => {
   return (
-    <ul className="dropdown">
+    <ul className="dropdown-list">
       {submenus.map((submenu, index) => (
-        <li key={index} className="menu-items">
-          <a href={submenu.url}>{submenu.title}</a>
-        </li>
+        <Link href={submenu.url} className='menu-item' key={index}>
+          <li className="menu-items">
+            {submenu.title}<span className='navbar-item-soon menu-item-soon'>soon</span>
+          </li>
+        </Link>
       ))}
     </ul>
   );

@@ -1,0 +1,14 @@
+.navbar-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item-svg {
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-item-link {
+  text-decoration: none;
+}
