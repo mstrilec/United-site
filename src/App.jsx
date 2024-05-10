@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainPage from './pages/MainPage'
 import LoginPage from './pages/LoginPage'
+import CopytradingPage from './pages/CopytradingPage'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
           <Route index element={<MainPage />} />
           <Route path='/home' element={<MainPage />} />
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/copytrading' element={<CopytradingPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
