@@ -135,8 +135,9 @@ const Copytrading = () => {
                     </div>
 
                 </div>
+            </div>
 
-                <div className='plus-button'>
+             <div className='plus-button'>
 
                 <Button
                     name='join now'
@@ -144,7 +145,6 @@ const Copytrading = () => {
                     textColor='#FFFFFF'
                 />
                 </div>
-            </div>
         </div>
 
         <div className='work-plan'>
@@ -199,6 +199,16 @@ const Copytrading = () => {
                     benefit from their knowledge.
                 </div>
 
+                <div className="text-community-mob">
+                    Join the largest collaborative community<br/> 
+                    of traders and investors<br/>
+                    in the world — a place to connect, share,<br/>
+                    and learn from other<br/>
+                    experienced investors. Chat with them,<br/>
+                    discuss strategies and<br/>
+                    benefit from their knowledge.
+                </div>
+
                 <div className='button-community'>
                 <Button
                     name='Discover Traders'
@@ -212,12 +222,19 @@ const Copytrading = () => {
                     may go up or down. Your capital is at risk.
                 </div>
 
+                <div className='subtile-community-mob'>
+                    Copy Trading does not amount to investment advice. The<br/> value of your investments <br/>
+                    may go up or down. Your capital is at risk.
+                </div>
+
 
 
             </div>
 
             <div className='right-community'>
-                <img src={Community}></img>
+                <div className='right-img-com'>
+                    <img className='community-image' src={Community}></img>
+                </div>
             </div>
         </div>
 
@@ -226,7 +243,7 @@ const Copytrading = () => {
             <div className='container'>
 
                 <div className='left-test'>
-                    <img src={TestImage}></img>
+                    <img className='test-image' src={TestImage}></img>
                 </div>
 
                 <div className='right-test'>
@@ -240,6 +257,12 @@ const Copytrading = () => {
                         to practise with.
                     </div>
 
+                    <div className='test-text-mob'>
+                        Want to try CopyTrader without risking <br/>any capital? <a className="test-test-mob">Try it in demo</a><br/>
+                        Every United account includes a free<br/> $100,000 virtual portfolio for you to <br/>
+                        practise with.
+                    </div>
+
                     <div className='Join United'>
                     <Button
                         name='Join United'
@@ -250,6 +273,10 @@ const Copytrading = () => {
 
                     <div className='subtitle-test'>
                         United is a multi-asset investment platform. The value of your investments may go up or down. Your capital is at risk.
+                    </div>
+
+                    <div className='subtitle-test-mob'>
+                        United is a multi-asset investment platform. The value of<br/> your investments may go up or down. Your <br/>capital is at risk.
                     </div>
 
 

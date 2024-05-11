@@ -9,7 +9,7 @@ const Plan = ({
 }) => {
   return (
     <div className='plan'>
-      <img src={img} alt="Plan" className='product-image' />
+      <img src={img} alt="Plan" className='plan-image' />
       <h3 className='plan-title'>{title}</h3>
     </div>
   )

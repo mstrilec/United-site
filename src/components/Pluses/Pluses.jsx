@@ -9,7 +9,7 @@ const Pluses = ({
 }) => {
   return (
     <div className='pluses'>
-      <img src={img} alt="Pluses" className='product-image' />
+      <img src={img} alt="Pluses" className='pluses-image' />
       <h3 className='pluses-title'>{title}</h3>
       <p className="pluses-text">{text}</p>
     </div>
