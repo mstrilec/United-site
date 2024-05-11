@@ -61,7 +61,7 @@
 .main-investing-block {
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
+  padding-top: 48px;
 }
 
 .main-users-block {
@@ -246,4 +246,173 @@
 .circleVectorRight {
   position: absolute;
   right: 0;
+}
+
+.trade-pc-for-pc {
+  display: none;
+}
+
+.trade-pc-for-pc {
+  display: none;
+}
+
+.trade-mobile-for-mobile {
+  display: none;
+}
+
+@media (max-width: 1265px) {
+  .main-block {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: baseline;
+    padding-bottom: 64px;
+  }
+
+  .main-investing-block {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .main-title {
+    font-size: 37px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.74px;
+  }
+
+  .main-title-second {
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .main-subtitle {
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.32px;
+  }
+
+  .main-title-subtitle {
+    gap: 24px;
+  }
+
+  .trade-mobile {
+    display: none;
+  }
+
+  .trade-pc {
+    display: none;
+  }
+
+  .trade-pc-for-pc {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .trade-mobile-for-mobile {
+    position: relative;
+    display: block;
+    z-index: 1;
+
+    bottom: -80px;
+    right: -50px;
+  }
+
+  .main-investing-block {
+    padding-top: 32px;
+  }
+
+  .main-launching {
+    height: 100%;
+    padding: 64px 0;
+  }
+
+  .timer-container {
+    flex-direction: column;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 45px;
+    gap: 8px;
+  }
+
+  .main-launching-text {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.56px;
+  }
+
+  .timer-section {
+    border: none;
+    gap: 8px;
+  }
+
+  .products {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product-item {
+    width: 100%;
+  }
+
+  .main-products {
+    padding: 64px 20px;
+  }
+
+  .main-products-text {
+    margin: 0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.56px;
+  }
+
+  .main-join-block {
+    padding: 64px 20px;
+    margin: 0;
+  }
+
+  .main-join-title {
+    padding: 0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.56px;
+  }
+
+  .main-join-subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.32px;
+  }
+
+  .main-join-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .join-mobile-button {
+    width: 100%;
+  }
 }

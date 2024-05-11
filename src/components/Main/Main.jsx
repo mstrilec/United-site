@@ -14,6 +14,8 @@ import telegram from '../../assets/Telegram.svg'
 import facebook from '../../assets/Facebook.svg'
 import tradePc from '../../assets/TradePC.png'
 import tradeMobile from '../../assets/TradeMobile.png'
+import tradingForMobile from '../../assets/trading-for-mob-mobile.svg'
+import tradingForPc from '../../assets/trading-for-mob-pc.svg'
 import { ReactSVG } from 'react-svg'
 
 const Main = () => {
@@ -88,6 +90,8 @@ const Main = () => {
           </div>
         </div>
 
+        <img src={tradingForMobile} className='trade-mobile-for-mobile' />
+        <img src={tradingForPc} className='trade-pc-for-pc' />
         <img src={tradeMobile} alt="Trade" className='trade-mobile' />
         <img src={tradePc} alt="Trade" className='trade-pc' />
       </div>
@@ -173,6 +177,7 @@ const Main = () => {
             textColor='#1D5F3A'
             leftSvg={facebook}
             corner='#319f60'
+            style='join-mobile-button'
           />
           <Button
             name='Telegram'
@@ -180,6 +185,7 @@ const Main = () => {
             textColor='#1D5F3A'
             leftSvg={telegram}
             corner='#319f60'
+            style='join-mobile-button'
           />
         </div>
       </section>

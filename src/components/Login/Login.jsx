@@ -16,6 +16,7 @@ const Login = () => {
           <img src={signInBg} className='signIn-bg' />
       </div>
       <div className='signIn'>
+        <span className='login-soon'>coming soon</span>
         <Link to='/home' className='signIn-logo'><ReactSVG src={logo} /></Link>
 
         <div className="signIn-block">

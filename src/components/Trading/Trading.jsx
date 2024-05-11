@@ -173,24 +173,32 @@ const Trading = () => {
         <h2 className="safe-title">Your Safe<br/>and Trusted Crypto Exchange</h2>
         <div className='safe-cards'>
           <div className="safe-card">
-            <ReactSVG src={storage} />
-            <h3 className="safe-card-title">Secure Asset<br/>Storage</h3>
-            <p className="safe-card-subtitle">Our industry-leading encryption<br/>and storage systems ensure that<br/>your assets are always safe and<br/>secure.</p>
+            <ReactSVG src={storage} className='safe-card-img' />
+            <div className='safe-card-info'>
+              <h3 className="safe-card-title">Secure Asset<br/>Storage</h3>
+              <p className="safe-card-subtitle">Our industry-leading encryption<br/>and storage systems ensure that<br/>your assets are always safe and<br/>secure.</p>
+            </div>
           </div>
           <div className="safe-card">
-            <ReactSVG src={account} />
-            <h3 className="safe-card-title">Strong Account<br/>Security</h3>
-            <p className="safe-card-subtitle">We adhere to the highest security<br/>standards and implement the<br/>strictest security practices to<br/>keep your account secure.</p>
+            <ReactSVG src={account} className='safe-card-img' />
+            <div className='safe-card-info'>
+              <h3 className="safe-card-title">Strong Account<br/>Security</h3>
+              <p className="safe-card-subtitle">We adhere to the highest security<br/>standards and implement the<br/>strictest security practices to<br/>keep your account secure.</p>
+            </div>
           </div>
           <div className="safe-card">
-            <ReactSVG src={platform} />
-            <h3 className="safe-card-title">Trusted <br/>Platform</h3>
-            <p className="safe-card-subtitle">We have a secure-by-design<br/>foundation in place to ensure<br/>rapid detection and response to<br/>any cyber attacks.</p>
+            <ReactSVG src={platform} className='safe-card-img' />
+            <div className='safe-card-info'>
+              <h3 className="safe-card-title">Trusted <br/>Platform</h3>
+              <p className="safe-card-subtitle">We have a secure-by-design<br/>foundation in place to ensure<br/>rapid detection and response to<br/>any cyber attacks.</p>
+            </div>
           </div>
           <div className="safe-card">
-            <ReactSVG src={tick} />
-            <h3 className="safe-card-title">PoR<br/>Asset Transparency</h3>
-            <p className="safe-card-subtitle">PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.</p>
+            <ReactSVG src={tick} className='safe-card-img' />
+            <div className='safe-card-info'>
+              <h3 className="safe-card-title">PoR<br/>Asset Transparency</h3>
+              <p className="safe-card-subtitle">PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.</p>
+            </div>
           </div>
         </div>
       </div>

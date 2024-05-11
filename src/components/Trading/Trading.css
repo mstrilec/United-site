@@ -228,6 +228,7 @@
 .start-title {
   padding-bottom: 32px;
   color: #F9F9F9;
+  text-align: center;
 
   font-size: 40px;
   font-style: normal;
@@ -313,6 +314,75 @@
 
   .crypto-title {
     font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+
+  .explore-block {
+    padding: 64px 20px;
+  }
+
+  .explore-title {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+
+  .explore-products {
+    padding-top: 16px;
+    flex-direction: column;
+  }
+
+  .explore-products-first-col {
+    gap: 16px;
+  }
+
+  .explore-products-second-col {
+    gap: 16px;
+  }
+
+  .safe-block {
+    padding: 64px 20px;
+  }
+
+  .safe-title {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+
+  .safe-cards {
+    padding-top: 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .safe-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .faq-block {
+    padding: 64px 20px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+
+  .contact-block {
+    flex-direction: column;
+    background: none;
+    padding: 64px 20px;
+  }
+
+  .contact-container {
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .contact-title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 120%;
     letter-spacing: 0.56px;
   }
 }

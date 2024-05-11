@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import footerLogo from '../../assets/footer-logo.png'
+import footerLogo from '../../assets/logo-contact.svg'
 import footerFb from '../../assets/facebook-footer.svg'
 import footerTg from '../../assets/telegram-footer.svg'
 import arrowRight from '../../assets/arrow-right.svg'
@@ -10,12 +10,12 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className="footer-nav">
-        <img src={footerLogo} alt="United" className='footer-logo' />
+        <ReactSVG src={footerLogo} className='footer-logo' />
 
         <div className="footer-nav-items">
           <div className="footer-nav-item">
             <h6 className="nav-item-title">About</h6>
-            <ul className='nav-item-list'>
+            <ul className='nav-item-list nav-item-list--mobile'>
               <li className='nav-item-list-item'>Markets</li>
               <li className='nav-item-list-item'>Buy Crypto<ReactSVG src={arrowRight} /></li>
               <li className='nav-item-list-item'>Markets</li>
@@ -27,14 +27,14 @@ const Footer = () => {
 
           <div className="footer-nav-item">
             <h6 className="nav-item-title">Contants</h6>
-            <ul className='nav-item-list'>
+            <ul className='nav-item-list nav-item-list--mobile'>
               <li className='nav-item-list-item'>info@united.com</li>
               <li className='nav-item-list-item'>(406) 555-0120</li>
               <li className='nav-item-list-item'>(808) 555-0910</li>
               <li className='nav-item-list-item'>567 Pine Road, Riverdale, NY</li>
             </ul>
 
-            <div className='footer-apps'>
+            <div className='footer-apps footer-apps--mobile'>
               <ReactSVG src={footerFb} />
               <ReactSVG src={footerTg} />
             </div>
@@ -42,7 +42,7 @@ const Footer = () => {
 
           <div className="footer-nav-item">
             <h6 className="nav-item-title">Futures information</h6>
-            <ul className='nav-item-list'>
+            <ul className='nav-item-list nav-item-list--mobile'>
               <li className='nav-item-list-item'>Terms & conditions </li>
               <li className='nav-item-list-item'>Privacy Policy</li>
             </ul>

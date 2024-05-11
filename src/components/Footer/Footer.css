@@ -8,11 +8,6 @@
   gap: 32px;
 }
 
-.footer-logo {
-  width: 184;
-  height: 65px;
-}
-
 .footer-nav {
   display: flex;
   align-items: flex-start;
@@ -75,4 +70,37 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+@media (max-width: 1265px) {
+  .footer {
+    width: 100%;
+    padding: 31px 20px;
+  }
+
+  .footer-nav {
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-items {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .nav-item-list--mobile {
+    display: none;
+  }
+
+  .footer-apps--mobile {
+    display: none;
+  }
+
+  .nav-items-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  }
 }

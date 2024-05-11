@@ -12,7 +12,7 @@ const Navbar = ({ menuOpen }) => {
   return (
     <>
       <nav className={navbarStyle}>
-        <Link to='/home'><img src={logo} alt="Logo" style={{ display: menuOpen ? 'none' : null}} /></Link>
+        <Link to='/home'><img src={logo} style={{ display: menuOpen ? 'none' : null}} /></Link>
         <div className={menuOpen ? 'navbar-list--open' : ''}>
           <ul className='navbar-list'>
             {navbarList.map((obj, index) => {
