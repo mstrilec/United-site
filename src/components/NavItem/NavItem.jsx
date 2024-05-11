@@ -7,7 +7,7 @@ import arrowUp from '../../assets/arrow-up.svg'
 import { Link } from 'react-router-dom';
 
 
-const NavItem = ({ obj, index }) => {
+const NavItem = ({ obj, index, menuOpen }) => {
   const [dropdown, setDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -15,8 +15,8 @@ const NavItem = ({ obj, index }) => {
   };
 
   return (
-    <Link className='navbar-item-link'>
-      <li key={index} className='navbar-item'>
+    <Link to={obj.to ? '/' + obj.to : ''} className='navbar-item-link'>
+      <li key={index} className={menuOpen ? 'navbar-item-open' : 'navbar-item'}>
         <div className="navbar-item-content">
           {obj.title}{obj.span ? <span className='navbar-item-soon'>{obj.span}</span> : null}
           {obj.dropdown && (
@@ -27,7 +27,7 @@ const NavItem = ({ obj, index }) => {
             />
           )}
         </div>
-        {dropdown && obj.dropdown && <Dropdown submenus={obj.dropdown} />}
+        {dropdown && obj.dropdown && <Dropdown submenus={obj.dropdown} menuOpen={menuOpen} />}
       </li>
     </Link>
   );

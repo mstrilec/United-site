@@ -158,6 +158,7 @@ const Main = () => {
           name='Join now'
           color='#277F4D'
           textColor='#FFF'
+          corner='#fff'
         />
       </section>
 
@@ -171,12 +172,14 @@ const Main = () => {
             color='#D6ECDF'
             textColor='#1D5F3A'
             leftSvg={facebook}
+            corner='#319f60'
           />
           <Button
             name='Telegram'
             color='#D6ECDF'
             textColor='#1D5F3A'
             leftSvg={telegram}
+            corner='#319f60'
           />
         </div>
       </section>

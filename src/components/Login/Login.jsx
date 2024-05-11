@@ -7,6 +7,7 @@ import email from '../../assets/email.svg'
 import key from '../../assets/key.svg'
 import signInBg from '../../assets/signIn-bg.png'
 import { Link } from 'react-router-dom'
+import Input from '../Input/Input'
 
 const Login = () => {
   return (
@@ -21,14 +22,14 @@ const Login = () => {
           <h3 className="signIn-title">Sign In</h3>
           <h4 className="signIn-subtitle">Login to manage your account</h4>
           <div className="signIn-inputs">
-            <label className="signIn-input">
-              <ReactSVG src={email} className='signIn-input-img' />
-              <input type="text" placeholder='Email' className='signIn-input-item' />
-            </label>
-            <label className="signIn-input">
-              <ReactSVG src={key} className='signIn-input-img' />
-              <input type="text" placeholder='Password' className='signIn-input-item' />
-            </label>
+            <Input 
+              placeholder='Email'
+              link={email}
+            />
+            <Input 
+              placeholder='Password'
+              link={key}
+            />
           </div>
           <Button
             name='Sign in'
@@ -36,6 +37,7 @@ const Login = () => {
             textColor='#F9F9F9'
             width='385px'
             span='soon'
+            corner='#fff'
           />
           <p className='signIn-forgot'>Don't have an account? <Link to='/signup' className='header-button-link'><span className='signIn-signup'>Sign up</span></Link></p>
           <div className="signIn-stay">

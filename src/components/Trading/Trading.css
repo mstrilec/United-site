@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .crypto-block {
-  height: 100vh;
+  height: auto;
   background-color: #131514;
   background-image: url('../../assets/crypto-bg.png');
   background-size: cover;
@@ -198,4 +198,121 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.faq-block {
+  padding: 106px 120px;
+}
+
+.faq-title {
+  color: #1D1D1D;
+  text-align: center;
+
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.12px;
+}
+
+.start-block {
+  padding: 52px 0;
+  background: url('../../assets/start-bg.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-title {
+  padding-bottom: 32px;
+  color: #F9F9F9;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.8px;
+}
+
+.contact-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 106px 120px;
+  background: url('../../assets/contact-bg.png');
+  background-repeat: no-repeat;
+}
+
+.contact-title {
+  width: 100%;
+  color:#0A2013;
+
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.12px;
+}
+
+.contact-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 54px 48px 54px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background:#131514;
+  gap: 24px;
+}
+
+@media (max-width: 1545px) {
+  .explore-card {
+    width: auto;
+  }
+}
+
+@media (max-width: 1265px) {
+  .crypto-coins {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .crypto-coins-first-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .crypto-coins-second-row {
+    padding-top: 0;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .crypto {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .crypto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .crypto-price {
+    text-align: start;
+  }
+
+  .crypto-block {
+    padding: 64px 20px;
+  }
+
+  .crypto-title {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
 }

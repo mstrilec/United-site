@@ -8,6 +8,7 @@ import key from '../../assets/key.svg'
 // import rightVector from '../../assets/right-vector.png'
 import signUpBg from '../../assets/signUpBg.png'
 import { Link } from 'react-router-dom'
+import Input from '../Input/Input'
 
 
 const SignUp = () => {
@@ -23,20 +24,18 @@ const SignUp = () => {
           <h3 className="signIn-title">Sign In</h3>
           <h4 className="signIn-subtitle">Login to manage your account</h4>
           <div className="signIn-inputs">
-            <label className="signIn-input">
-              {/* <img src={leftVector} /> */}
-              <ReactSVG src={email} className='signIn-input-img' />
-              <input type="text" placeholder='Email' className='signIn-input-item' />
-              {/* <img src={rightVector} /> */}
-            </label>
-            <label className="signIn-input">
-              <ReactSVG src={key} className='signIn-input-img' />
-              <input type="text" placeholder='Password' className='signIn-input-item' />
-            </label>
-            <label className="signIn-input">
-              <ReactSVG src={key} className='signIn-input-img' />
-              <input type="text" placeholder='Confirm password' className='signIn-input-item' />
-            </label>
+            <Input
+              placeholder='Email'
+              link={email}
+            />
+            <Input
+              placeholder='Password'
+              link={key}
+            />
+            <Input
+              placeholder='Confirm password'
+              link={key}
+            />
           </div>
           <Button
             name='Sign up'
@@ -44,6 +43,7 @@ const SignUp = () => {
             textColor='#F9F9F9'
             width='385px'
             span='soon'
+            corner='#fff'
           />
           <p className='signIn-forgot'>Already have an account? <Link to='/login' className='header-button-link'><span className='signIn-signup'>Sign in</span></Link></p>
           <div className="signIn-stay">

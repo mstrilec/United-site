@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Dropdown.css'
 
-const Dropdown = ({ submenus }) => {
+const Dropdown = ({ submenus, menuOpen }) => {
   return (
     <ul className="dropdown-list">
       {submenus.map((submenu, index) => (

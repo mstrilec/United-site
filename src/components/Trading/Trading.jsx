@@ -19,7 +19,10 @@ import storage from '../../assets/safe/storage.svg'
 import account from '../../assets/safe/account.svg'
 import platform from '../../assets/safe/platform.svg'
 import arrowRight from '../../assets/explore/arrow-right.svg'
+import logoContact from '../../assets/logo-contact.svg'
 import Button from '../Button/Button'
+import FAQ from '../FAQ/FAQ'
+import Input from '../Input/Input'
 
 const Trading = () => {
   return (
@@ -30,30 +33,40 @@ const Trading = () => {
           <div className='crypto-coins-first-row'>
             <div className="crypto">
               <ReactSVG src={btc} className='crypto-img' />
-              <h2 className='crypto-name'>BTC USDT Perpetual</h2>
-              <p className='crypto-price'>63,387.5</p>
+              <div className='crypto-info'>
+                <h2 className='crypto-name'>BTC USDT Perpetual</h2>
+                <p className='crypto-price'>63,387.5</p>
+              </div>
             </div>
             <div className="crypto">
               <ReactSVG src={eth} className='crypto-img' />
-              <h2 className='crypto-name'>ETH USDT Perpetual</h2>
-              <p className='crypto-price'>3,118.69</p>
+              <div className='crypto-info'>
+                <h2 className='crypto-name'>ETH USDT Perpetual</h2>
+                <p className='crypto-price'>3,118.69</p>
+              </div>
             </div>
             <div className="crypto">
               <ReactSVG src={pepe} className='crypto-img' />
-              <h2 className='crypto-name'>PEPE USDT Perpetual</h2>
-              <p className='crypto-price'>0.000008658</p>
+              <div className='crypto-info'>
+                <h2 className='crypto-name'>PEPE USDT Perpetual</h2>
+                <p className='crypto-price'>0.000008658</p>
+              </div>
             </div>
           </div>
           <div className='crypto-coins-second-row'>
             <div className="crypto">
               <ReactSVG src={sol} className='crypto-img' />
-              <h2 className='crypto-name'>ETH USDT Perpetual</h2>
-              <p className='crypto-price'>3,118.69</p>
+              <div className='crypto-info'>
+                <h2 className='crypto-name'>ETH USDT Perpetual</h2>
+                <p className='crypto-price'>3,118.69</p>
+              </div>
             </div>
             <div className="crypto">
               <ReactSVG src={doge} className='crypto-img' />
-              <h2 className='crypto-name'>ETH USDT Perpetual</h2>
-              <p className='crypto-price'>3,118.69</p>
+              <div className='crypto-info'>
+                <h2 className='crypto-name'>ETH USDT Perpetual</h2>
+                <p className='crypto-price'>3,118.69</p>
+              </div>
             </div>
           </div>
         </div>
@@ -62,6 +75,7 @@ const Trading = () => {
             name='Start trading'
             color='#277F4D'
             textColor='#FFF'
+            corner='#161716'
           />
         </div>
       </div>
@@ -178,6 +192,46 @@ const Trading = () => {
             <h3 className="safe-card-title">PoR<br/>Asset Transparency</h3>
             <p className="safe-card-subtitle">PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.</p>
           </div>
+        </div>
+      </div>
+
+      <div className='faq-block'>
+        <h2 className='faq-title'>FAQ</h2>
+        <FAQ />
+      </div>
+
+      <div className="start-block">
+        <h2 className='start-title'>Start your crypto journey now!</h2>
+        <Button 
+          name='Sign up now'
+          color='#D6ECDF'
+          textColor='#144026'
+          corner='#319f60'
+        />
+      </div>
+
+      <div className='contact-block'>
+        <h2 className='contact-title'>Contact us</h2>
+        <div className='contact-container'>
+          <ReactSVG src={logoContact} />
+          <Input 
+            placeholder='Email'
+            corner='#131514'
+          />
+          <Input 
+            placeholder='Email'
+            corner='#131514'
+          />
+          <Input 
+            placeholder='Message'
+            corner='#131514'
+          />
+          <Button 
+            name='Send'
+            color='#277F4D'
+            textColor='#FFFFFF'
+            width='100%'
+          />
         </div>
       </div>
     </>

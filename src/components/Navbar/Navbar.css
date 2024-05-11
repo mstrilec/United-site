@@ -34,3 +34,11 @@
   line-height: 140%;
   letter-spacing: 0.24px;
 }
+
+.navbar-list--open {
+  padding: 0 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}

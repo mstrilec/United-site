@@ -1,6 +1,7 @@
 export const navbarList = [
   {
     title: 'Markets',
+    to: 'trading',
   },
   {
     title: 'Buy Crypto',
@@ -24,6 +25,7 @@ export const navbarList = [
   },
   {
     title: 'Copy Trading',
+    to: 'copy-trading',
   },
   {
     title: 'Spot',
