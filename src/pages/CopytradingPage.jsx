@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from '../components/Header/Header'
+import Copytrading from '../components/Copytrading/Copytrading'
+import Footer from '../components/Footer/Footer'
 
 const CopytradingPage = () => {
   return (
-    <div>CopytradingPage</div>
+    <>
+      <Header />
+      <Copytrading />
+      <Footer />
+    </>
   )
 }
 

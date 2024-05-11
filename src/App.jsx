@@ -4,6 +4,7 @@ import MainPage from './pages/MainPage'
 import LoginPage from './pages/LoginPage'
 import SignUpPage from './pages/SignUpPage'
 import TradingPage from './pages/TradingPage'
+import CopytradingPage from './pages/CopytradingPage'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/signup' element={<SignUpPage />} />
           <Route path='/trading' element={<TradingPage />} />
+          <Route path='/copytrading' element={<CopytradingPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

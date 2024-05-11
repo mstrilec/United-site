@@ -1,0 +1,609 @@
+@font-face {
+    font-family: SF;
+    src: url('../../fonts/SFPRODISPLAYREGULAR.OTF');
+  }
+
+.copytrading{
+    margin: 0;
+    padding: 0;
+}
+
+.copytrading-main{
+    height: 430px;
+    display: grid;
+}
+
+.copytrading-maintop{
+    background-color: #131514;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.copytrading-title{
+    color:white;
+    font-family: 'SF';
+    font-size: 132px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    z-index: 2;
+}
+
+.copytrading-text{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:white;
+    font-size: 132px;
+    letter-spacing: 2.64px;
+    font-weight: 500;
+    z-index: 5;
+}
+
+.leftpic{
+    display: flex;
+    flex-direction: column;
+}
+
+.copytrading-img{
+    position: absolute;
+    z-index: 1;
+    left: 47%;
+    height: 180px;
+    transform: translateX(-50%);
+
+}
+
+.copytrading-maindown{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #319F60;
+    padding: 54px 0px;
+    width: 1070px;
+    border-radius: 8px;
+    align-items: center;
+    gap: 32px;
+}
+
+.copytrading-maingreen{
+    justify-content: center;
+    display: flex;
+    margin-top: -50px;
+}
+
+.copytrading-downtext{
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+
+
+.copytrading-pluses{
+    padding-top: 106px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plus-title{
+    color: var(--neutral-70, #131514);
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 1.12px;
+}
+
+.plus-subtitle{
+    color: var(--neutral-60, #404040);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.4px;
+    padding-top: 25px;
+
+}
+
+.plus-top{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.plus-item{
+    padding-right: 32px;
+}
+
+.plus-down{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+.plus-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 105px;
+}
+
+.work-plan{
+    justify-content: center;
+    text-align: center;
+}
+
+.plans-title{
+    padding-top: 105px;
+    justify-content: center;
+    color: var(--neutral-70, #131514);
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+.plans-subtitle{
+    color: var(--neutral-60, #404040);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    padding-top: 16px;
+}
+
+.plans-items{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+
+.plan-item{
+    width: 350px;
+}
+
+
+
+.copytrading-community{
+    display: flex;
+    align-items: center;
+    padding: 105px 120px;
+    justify-content: center;
+}
+
+.left-community{
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.title-community1{
+    color: #000021;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.12px; 
+    gap: 8px;
+    display: flex;
+}
+
+.title-community2{
+    font-weight: 600;
+}
+
+.text-community{
+    padding-top: 16px;
+    color: #404040; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    padding-bottom: 40px;
+}
+
+.text-community-mob{
+    padding-top: 16px;
+    color: #404040; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    padding-bottom: 32px;
+}
+
+.subtile-community{
+    color: #000021;
+    padding-top: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.subtile-community-mob{
+    color: #000021;
+    padding-top: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.community-image{
+    border-radius: 8px;
+}
+
+.copytrading-test{
+    background: var(--neutral-70, #131514);
+}
+
+.container{
+    padding: 105px 120px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.right-test{
+    padding-left: 50px;
+}
+
+.test-title{
+    padding-bottom: 15px;
+    color: var(--neutral-1, #FFF);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.12px;
+}
+
+.test-title1{
+    font-weight: 500;
+}
+
+.test-text{
+    padding-bottom: 40px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+}
+
+.test-test-green{
+    color: #319F60;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-decoration-line: underline;
+}
+
+.subtitle-test{
+    padding-top: 40px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+}
+
+.test-image{
+    width: 460px;
+}
+
+
+.header{
+    display: none;
+}
+
+
+.test-text-mob,
+.subtitle-test-mob,
+.text-community-mob,
+.subtile-community-mob{
+    display: none;
+}
+
+.test-text-mob{
+    padding-bottom: 40px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+}
+
+.subtitle-test-mob{
+    padding-top: 40px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+}
+
+.test-test-mob{
+    color: #319F60;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-decoration-line: underline;
+}
+
+
+@media( max-width: 1300px){
+    .test-text-mob,
+    .subtitle-test-mob{
+        display: block;
+    }
+
+    .test-text,
+    .subtitle-test{
+        display: none;
+    }
+
+    .test-title{
+        font-size: 40px;
+    }
+
+    .copytrading-maindown{
+        width: 80%;
+    }
+
+    .copytrading-community,
+    .container{
+        padding: 95px 110px;
+    }
+
+    .plus-button,
+    .plans-items{
+        padding-bottom: 95px;
+    }
+
+    .plans-title,
+    .copytrading-pluses{
+        padding-top: 95px;
+    }
+
+}
+
+@media( max-width: 1170px){
+
+    .plus-subtitle,
+    .plans-subtitle{
+        font-size: 18px;
+    }
+
+    .plus-title,
+    .plans-title{
+        font-size: 50px;
+    }
+
+    .plan-item{
+        width: 30%;
+    }
+
+    .community-image{
+        width: 450px;
+    }
+
+    .title-community1{
+        font-size: 45px;
+    }
+
+    .text-community-mob,
+    .subtile-community-mob{
+        display: flex;
+    }
+
+    .subtile-community,
+    .text-community{
+        display: none;
+    }
+
+    .test-image{
+        width: 100%;
+    }
+
+    .left-test{
+        width: 50%;
+    }
+
+    .test-title{
+        font-size: 35px;
+    }
+    
+    .copytrading-maindown{
+        padding: 50px 0px;
+    }
+
+    .copytrading-downtext{
+        font-size: 35px;
+    }
+
+    .copytrading-text,
+    .copytrading-title{
+        font-size: 120px
+    }
+
+}
+
+
+@media( max-width: 1060px){
+
+    .copytrading-community,
+    .container{
+        padding: 80px 95px;
+    }
+
+    .plus-button,
+    .plans-items{
+        padding-bottom: 80px;
+    }
+
+    .plans-title,
+    .copytrading-pluses{
+        padding-top: 80px;
+    }
+
+    .title-community1{
+        font-size: 40px;
+    }
+    
+    .community-image{
+        width: 400px;
+    }
+
+    .test-title{
+        font-size: 30px;
+    }
+
+    
+    .plus-subtitle,
+    .plans-subtitle{
+        font-size: 17px;
+    }
+
+    .plus-title,
+    .plans-title{
+        font-size: 40px;
+    }
+
+    .copytrading-text,
+    .copytrading-title{
+        font-size: 110px
+    }
+
+    .copytrading-maindown{
+        padding: 35px 0px;
+    }
+
+    .test-text-mob,
+    .text-community-mob{
+        font-size: 17px;
+    }
+
+    
+}
+
+@media( max-width: 950px){
+
+    .copytrading-maindown {
+        padding: 32px 20px;
+      }
+
+    .copytrading-community,
+    .container {
+        padding: 70px 85px;
+    }
+
+    .plus-button,
+    .plans-items{
+        padding-bottom: 70px;
+    }
+
+    .plans-title,
+    .copytrading-pluses{
+        padding-top: 70px;
+    }
+
+    .plans-items{
+        padding-top: 70px;
+    }
+
+    .right-test{
+        padding-left: 30px;
+    }
+
+    .test-title{
+        font-size: 28px;
+    }
+
+    .test-text-mob,
+    .text-community-mob {
+        font-size: 16px;
+    }
+
+    .title-community1,
+    .plus-title, 
+    .plans-title {
+        font-size: 35px;
+    }
+
+    .plus-subtitle,
+    .plans-subtitle {
+        font-size: 16px;
+    }
+
+    .copytrading-text,
+    .copytrading-title {
+        font-size: 100px;
+    }
+}
+
+
+@media( max-width: 900px){
+    .community-image {
+        width: 385px;
+        height: 395px;
+    }
+
+    .left-community{
+        padding-right: 30px;
+    }
+
+    .left-test {
+        width: 45%;
+    }
+
+    .copytrading-community,
+    .container {
+        padding: 65px 75px;
+    }
+
+    .plus-button,
+    .plans-items {
+        padding-bottom: 65px;
+    }
+
+    .plans-title,
+    .copytrading-pluses {
+        padding-top: 65px;
+    }
+
+    .plans-items{
+        padding-top: 50px;
+    }
+}
+
+
+@media( max-width: 850px){
+    .plus-top,
+    .plus-down{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .plus{
+        display: flex;
+    }
+
+    .plus-item{
+        padding-bottom: 24px;
+    }
+}
+
