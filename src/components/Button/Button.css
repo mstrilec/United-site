@@ -69,3 +69,8 @@
   margin-top: -2px;
   margin-right: 8px;
 }
+
+.fix-button-corners {
+  width: fit-content;
+  height: fit-content;
+}

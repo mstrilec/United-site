@@ -74,6 +74,8 @@ const Main = () => {
               color='#277F4D'
               textColor='#FFF'
               rightSvg={arrowDiagonal}
+              corner='#fff'
+              fix='fix-button-corners'
             />
             <div className="main-users">
               <div className="users">

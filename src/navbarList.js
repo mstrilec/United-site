@@ -25,7 +25,7 @@ export const navbarList = [
   },
   {
     title: 'Copy Trading',
-    to: 'copy-trading',
+    to: 'copytrading',
   },
   {
     title: 'Spot',

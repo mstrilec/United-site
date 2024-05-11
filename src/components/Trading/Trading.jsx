@@ -22,7 +22,9 @@ import arrowRight from '../../assets/explore/arrow-right.svg'
 import logoContact from '../../assets/logo-contact.svg'
 import Button from '../Button/Button'
 import FAQ from '../FAQ/FAQ'
-import Input from '../Input/Input'
+import Card from '../Card/Card'
+import SafeCard from '../SafeCard/SafeCard'
+import Form from '../Form/Form'
 
 const Trading = () => {
   return (
@@ -84,122 +86,146 @@ const Trading = () => {
         <h2 className='explore-title'>Explore United Products & Services</h2>
         <div className='explore-products'>
           <div className='explore-products-first-col'>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>Spot Trading</h3>
-                <p className='explore-card-subtitle'>Trade crypto with our comprehensive<br/>set of powerful tools to maximize your<br/>profits</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={flag} />
-              </div>
-            </div>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>Crypto Derivatives</h3>
-                <p className='explore-card-subtitle'>We are the best crypto exchange for<br/>trading crypto futures</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={up} />
-              </div>
-            </div>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>Copy Trading Bot</h3>
-                <p className='explore-card-subtitle'>Earn passive income round-the-clock<br/>without having to constantly monitor<br/>markets</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={bot} />
-              </div>
-            </div>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>Leveraged Tokens</h3>
-                <p className='explore-card-subtitle'>Amplify your investment returns by simply<br/>buying and selling leveraged tokens</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={tokens} />
-              </div>
-            </div>
+            <Card
+              title='Spot Trading'
+              text={
+                <>
+                  Trade crypto with our comprehensive<br/>set of powerful tools to maximize your<br/>profits
+                </>
+              }
+              arrow={arrowRight}
+              icon={flag}
+            />
+            <Card
+              title='Crypto Derivatives'
+              text={
+                <>
+                  We are the best crypto exchange for<br/>trading crypto futures
+                </>
+              }
+              arrow={arrowRight}
+              icon={up}
+            />
+            <Card
+              title='Copy Trading Bot'
+              text={
+                <>
+                  Earn passive income round-the-clock<br/>without having to constantly monitor<br/>markets
+                </>
+              }
+              arrow={arrowRight}
+              icon={bot}
+            />
+            <Card
+              title='Leveraged Tokens'
+              text={
+                <>
+                  Amplify your investment returns by simply<br/>buying and selling leveraged tokens
+                </>
+              }
+              arrow={arrowRight}
+              icon={tokens}
+            />
           </div>
           <div className='explore-products-second-col'>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>Buy Crypto</h3>
-                <p className='explore-card-subtitle'>Purchase crypto quickly and easily on<br/>our popular and industry-leading<br/>platform</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={card} />
-              </div>
-            </div>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>United Earn</h3>
-                <p className='explore-card-subtitle'>Invest and earn steady income with the<br/>help of a professional asset manager<br/></p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={earn} />
-              </div>
-            </div>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>Margin Trading</h3>
-                <p className='explore-card-subtitle'>Borrow, trade, and repay. Leverage your assets<br/>with margin trading</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={trading} />
-              </div>
-            </div>
-            <div className='explore-card'>
-              <div className='explore-card-text'>
-                <h3 className='explore-card-title'>United Wallet</h3>
-                <p className='explore-card-subtitle'>A self-custody social wallet that allows<br/>you to easily discover, invest, and earn</p>
-              </div>
-              <div className='explore-card-imgs'>
-                <ReactSVG src={arrowRight} />
-                <ReactSVG src={wallet} />
-              </div>
-            </div>
+            <Card
+              title='Buy Crypto'
+              text={
+                <>
+                  Purchase crypto quickly and easily on<br/>our popular and industry-leading<br/>platform
+                </>
+              }
+              arrow={arrowRight}
+              icon={card}
+            />
+            <Card
+              title='United Earn'
+              text={
+                <>
+                  Invest and earn steady income with the<br/>help of a professional asset manager
+                </>
+              }
+              arrow={arrowRight}
+              icon={earn}
+            />
+            <Card
+              title='Margin Trading'
+              text={
+                <>
+                  Borrow, trade, and repay. Leverage your assets<br/>with margin trading
+                </>
+              }
+              arrow={arrowRight}
+              icon={trading}
+            />
+            <Card
+              title='United Wallet'
+              text={
+                <>
+                  A self-custody social wallet that allows<br/>you to easily discover, invest, and earn
+                </>
+              }
+              arrow={arrowRight}
+              icon={wallet}
+            />
           </div>
         </div>
       </div>
       <div className='safe-block'>
         <h2 className="safe-title">Your Safe<br/>and Trusted Crypto Exchange</h2>
         <div className='safe-cards'>
-          <div className="safe-card">
-            <ReactSVG src={storage} className='safe-card-img' />
-            <div className='safe-card-info'>
-              <h3 className="safe-card-title">Secure Asset<br/>Storage</h3>
-              <p className="safe-card-subtitle">Our industry-leading encryption<br/>and storage systems ensure that<br/>your assets are always safe and<br/>secure.</p>
-            </div>
-          </div>
-          <div className="safe-card">
-            <ReactSVG src={account} className='safe-card-img' />
-            <div className='safe-card-info'>
-              <h3 className="safe-card-title">Strong Account<br/>Security</h3>
-              <p className="safe-card-subtitle">We adhere to the highest security<br/>standards and implement the<br/>strictest security practices to<br/>keep your account secure.</p>
-            </div>
-          </div>
-          <div className="safe-card">
-            <ReactSVG src={platform} className='safe-card-img' />
-            <div className='safe-card-info'>
-              <h3 className="safe-card-title">Trusted <br/>Platform</h3>
-              <p className="safe-card-subtitle">We have a secure-by-design<br/>foundation in place to ensure<br/>rapid detection and response to<br/>any cyber attacks.</p>
-            </div>
-          </div>
-          <div className="safe-card">
-            <ReactSVG src={tick} className='safe-card-img' />
-            <div className='safe-card-info'>
-              <h3 className="safe-card-title">PoR<br/>Asset Transparency</h3>
-              <p className="safe-card-subtitle">PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.</p>
-            </div>
-          </div>
+          <SafeCard 
+            title={
+              <>
+                Secure Asset<br/>Storage
+              </>
+            }
+            text={
+              <>
+                Our industry-leading encryption<br/>and storage systems ensure that<br/>your assets are always safe and<br/>secure.
+              </>
+            }
+            icon={storage}
+          />
+          <SafeCard 
+            title={
+              <>
+                Strong Account<br/>Security
+              </>
+            }
+            text={
+              <>
+                We adhere to the highest security<br/>standards and implement the<br/>strictest security practices to<br/>keep your account secure.
+              </>
+            }
+            icon={account}
+          />
+          <SafeCard 
+            title={
+              <>
+                Trusted <br/>Platform
+              </>
+            }
+            text={
+              <>
+                We have a secure-by-design<br/>foundation in place to ensure<br/>rapid detection and response to<br/>any cyber attacks.
+              </>
+            }
+            icon={platform}
+          />
+          <SafeCard 
+            title={
+              <>
+                PoR<br/>Asset Transparency
+              </>
+            }
+            text={
+              <>
+                PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.
+              </>
+            }
+            icon={tick}
+          />
         </div>
       </div>
 
@@ -220,27 +246,9 @@ const Trading = () => {
 
       <div className='contact-block'>
         <h2 className='contact-title'>Contact us</h2>
-        <div className='contact-container'>
-          <ReactSVG src={logoContact} />
-          <Input 
-            placeholder='Email'
-            corner='#131514'
-          />
-          <Input 
-            placeholder='Email'
-            corner='#131514'
-          />
-          <Input 
-            placeholder='Message'
-            corner='#131514'
-          />
-          <Button 
-            name='Send'
-            color='#277F4D'
-            textColor='#FFFFFF'
-            width='100%'
-          />
-        </div>
+        <Form
+          logo={logoContact}
+        />
       </div>
     </>
   )

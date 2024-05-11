@@ -14,9 +14,10 @@ const Button = ({
   span,
   corner,
   style,
+  fix,
 }) => {
   return (
-    <div className='btn' style={{width: width, '--right-corner': corner, '--right-corner-border': color}}>
+    <div className={'btn ' + fix} style={{width: width, '--right-corner': corner, '--right-corner-border': color}}>
       <div className='btn-second-corner' style={{'--left-corner': corner, '--left-corner-border': color}}>
         <button className={'button ' + style} style={{background: color, color: textColor, width: width}}>
         {leftSvg ? (

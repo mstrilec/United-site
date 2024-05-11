@@ -41,9 +41,10 @@ const Copytrading = () => {
                     </div>
 
                     <Button
-                    name='startcopy'
+                    name='START COPYING'
                     color='#D6ECDF'
                     textColor='#144026'
+                    corner='#319f60'
                     />
 
                     </div>
@@ -143,6 +144,7 @@ const Copytrading = () => {
                     name='join now'
                     color='#277F4D'
                     textColor='#FFFFFF'
+                    corner='#fff'
                 />
                 </div>
         </div>
@@ -214,6 +216,8 @@ const Copytrading = () => {
                     name='Discover Traders'
                     color='#277F4D'
                     textColor='#FFFFFF'
+                    fix='fix-button-corners'
+                    corner='#fff'
                 />
                 </div>
 
@@ -268,6 +272,8 @@ const Copytrading = () => {
                         name='Join United'
                         color='#D6ECDF'
                         textColor='#144026'
+                        corner='#131514'
+                        fix='fix-button-corners'
                     />
                     </div>
 

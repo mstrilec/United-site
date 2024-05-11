@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import './Accordion.css'
+import plus from '../../assets/plus.svg'
+import minus from '../../assets/minus.svg'
+import { ReactSVG } from "react-svg";
 
 const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
@@ -11,32 +14,11 @@ const Accordion = ({ title, answer }) => {
         className="flex justify-between w-full faq-accordion-button"
       >
         <span className="faq-accordion-title">{title}</span>
-        {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
-        <svg
-          className="fill-indigo-500 shrink-0 ml-8"
-          width="16"
-          height="16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            y="7"
-            width="16"
-            height="2"
-            rx="1"
-            className={`transform origin-center transition duration-200 ease-out ${
-              accordionOpen && "!rotate-180"
-            }`}
-          />
-          <rect
-            y="7"
-            width="16"
-            height="2"
-            rx="1"
-            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-              accordionOpen && "!rotate-180"
-            }`}
-          />
-        </svg>
+        {accordionOpen ? (
+          <ReactSVG src={minus} />
+        ) : (
+          <ReactSVG src={plus} />
+        )}
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${

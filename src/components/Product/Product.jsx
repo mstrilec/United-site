@@ -1,6 +1,7 @@
 import React from 'react'
 import './Product.css'
 import { ReactSVG } from 'react-svg'
+import { Link } from 'react-router-dom'
 
 const Product = ({
   img,
@@ -14,7 +15,7 @@ const Product = ({
       <h3 className='product-title'>{title}</h3>
       <h4 className='product-subtitle'>{subtitle}</h4>
       <p className="product-text">{text}</p>
-      <a className='product-learn'>Learn more</a>
+      <Link className='product-learn'>Learn more</Link>
     </div>
   )
 }
