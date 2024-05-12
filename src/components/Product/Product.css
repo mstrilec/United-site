@@ -55,3 +55,9 @@
   color: #0A2013;
   text-decoration-line: underline;
 }
+@media (max-width: 1265px) {
+  .product-image {
+    width: 86px;
+    height: 86px;
+  }
+}

@@ -1,0 +1,32 @@
+.footer-accordion {
+  border-radius: 16px;
+  background:#131514;
+  border: none;
+  width: 100%;
+}
+
+.footer-accordion-button {
+  border: none;
+  background: #131514;
+  cursor: pointer;
+}
+
+.footer-accordion-title {
+  color: #FFF;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+.footer-accordion-subtitle {
+  color:#404040;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}

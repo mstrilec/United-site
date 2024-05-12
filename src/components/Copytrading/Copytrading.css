@@ -249,12 +249,12 @@
     background: var(--neutral-70, #131514);
 }
 
-.container{
+/* .container{
     padding: 105px 120px;
     justify-content: center;
     display: flex;
     align-items: center;
-}
+} */
 
 .right-test{
     padding-left: 50px;
@@ -359,10 +359,10 @@
         width: 80%;
     }
 
-    .copytrading-community,
+    /* .copytrading-community,
     .container{
         padding: 95px 110px;
-    }
+    } */
 
     .plus-button,
     .plans-items{
@@ -440,10 +440,10 @@
 
 @media( max-width: 1060px){
 
-    .copytrading-community,
+    /* .copytrading-community,
     .container{
         padding: 80px 95px;
-    }
+    } */
 
     .plus-button,
     .plans-items{
@@ -501,10 +501,10 @@
         padding: 32px 20px;
       }
 
-    .copytrading-community,
+    /* .copytrading-community,
     .container {
         padding: 70px 85px;
-    }
+    } */
 
     .plus-button,
     .plans-items{
@@ -565,10 +565,10 @@
         width: 45%;
     }
 
-    .copytrading-community,
+    /* .copytrading-community,
     .container {
         padding: 65px 75px;
-    }
+    } */
 
     .plus-button,
     .plans-items {

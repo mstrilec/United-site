@@ -61,7 +61,7 @@ const Main = () => {
 
   return (
     <main className='main'>
-      <div className='main-block'>
+      <div className='main-block container'>
         <div className="main-block-left-side">
           <div className="main-title-subtitle">
             <h2 className='main-title'>Low fees,<br /><span className='main-title-second'>high perfomance</span></h2>

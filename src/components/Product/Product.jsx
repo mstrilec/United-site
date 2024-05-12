@@ -11,7 +11,7 @@ const Product = ({
 }) => {
   return (
     <div className='product'>
-      <ReactSVG src={img} className='product-image' />
+      <img src={img} className='product-image' />
       <h3 className='product-title'>{title}</h3>
       <h4 className='product-subtitle'>{subtitle}</h4>
       <p className="product-text">{text}</p>

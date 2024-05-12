@@ -23,6 +23,11 @@
   transform: rotate(45deg);
 }
 
+.button:hover {
+  background: var(--btn-hover, #FFD700);
+  color: var(--text-hover, #000);
+}
+
 .btn-second-corner::before {
   content: '';
   position: absolute;

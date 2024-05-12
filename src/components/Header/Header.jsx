@@ -10,7 +10,7 @@ const Header = () => {
   const [navbarProps, setNavbarProps] = useState({});
 
   return (
-    <header className='header'>
+    <header className='header container'>
       <Navbar {...navbarProps} />
       <BurgerMenu setNavbarProps={setNavbarProps} />
       <div className='header-buttons'>

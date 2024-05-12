@@ -268,9 +268,15 @@
   gap: 24px;
 }
 
+.signIn-input-item-textarea {
+  resize: none;
+}
+
 @media (max-width: 1545px) {
   .explore-card {
     width: auto;
+    height: auto;
+    padding: 20px;
   }
 }
 
@@ -329,6 +335,7 @@
   .explore-products {
     padding-top: 16px;
     flex-direction: column;
+    gap: 16px;
   }
 
   .explore-products-first-col {
@@ -357,6 +364,23 @@
   .safe-card {
     flex-direction: row;
     align-items: flex-start;
+    gap: 16px;
+  }
+
+  .safe-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+
+  .safe-card-title {
+    text-align: start;
+    padding: 0;
+  }
+
+  .safe-card-subtitle {
+    text-align: start;
   }
 
   .faq-block {
@@ -385,4 +409,16 @@
     line-height: 120%;
     letter-spacing: 0.56px;
   }
+
+  .safe-card-img {
+    width: 48px;
+    height: 48px;
+    margin-top: 24px;
+  }
+
+  /* .explore-card-icon {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+  } */
 }

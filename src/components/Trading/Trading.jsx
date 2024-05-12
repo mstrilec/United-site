@@ -25,6 +25,7 @@ import FAQ from '../FAQ/FAQ'
 import Card from '../Card/Card'
 import SafeCard from '../SafeCard/SafeCard'
 import Form from '../Form/Form'
+import Coin from '../Coin/Coin'
 
 const Trading = () => {
   return (
@@ -33,43 +34,33 @@ const Trading = () => {
         <h2 className='crypto-title'>Trade the Most Popular<br/>Cryptocurrencies</h2>
         <div className='crypto-coins'>
           <div className='crypto-coins-first-row'>
-            <div className="crypto">
-              <ReactSVG src={btc} className='crypto-img' />
-              <div className='crypto-info'>
-                <h2 className='crypto-name'>BTC USDT Perpetual</h2>
-                <p className='crypto-price'>63,387.5</p>
-              </div>
-            </div>
-            <div className="crypto">
-              <ReactSVG src={eth} className='crypto-img' />
-              <div className='crypto-info'>
-                <h2 className='crypto-name'>ETH USDT Perpetual</h2>
-                <p className='crypto-price'>3,118.69</p>
-              </div>
-            </div>
-            <div className="crypto">
-              <ReactSVG src={pepe} className='crypto-img' />
-              <div className='crypto-info'>
-                <h2 className='crypto-name'>PEPE USDT Perpetual</h2>
-                <p className='crypto-price'>0.000008658</p>
-              </div>
-            </div>
+            <Coin 
+              icon={btc}
+              title='BTC USDT Perpetual'
+              price='63,387.5'
+            />
+            <Coin 
+              icon={eth}
+              title='ETH USDT Perpetual'
+              price='3,118.69'
+            />
+            <Coin 
+              icon={pepe}
+              title='PEPE USDT Perpetual'
+              price='0.000008658'
+            />
           </div>
           <div className='crypto-coins-second-row'>
-            <div className="crypto">
-              <ReactSVG src={sol} className='crypto-img' />
-              <div className='crypto-info'>
-                <h2 className='crypto-name'>ETH USDT Perpetual</h2>
-                <p className='crypto-price'>3,118.69</p>
-              </div>
-            </div>
-            <div className="crypto">
-              <ReactSVG src={doge} className='crypto-img' />
-              <div className='crypto-info'>
-                <h2 className='crypto-name'>ETH USDT Perpetual</h2>
-                <p className='crypto-price'>3,118.69</p>
-              </div>
-            </div>
+            <Coin 
+              icon={sol}
+              title='SOL USDT Perpetual'
+              price='145.989'
+            />
+            <Coin 
+              icon={doge}
+              title='DOGE USDT Perpetual'
+              price='0.15900'
+            />
           </div>
         </div>
         <div className='crypto-btn'>

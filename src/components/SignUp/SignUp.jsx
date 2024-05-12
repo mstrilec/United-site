@@ -45,6 +45,10 @@ const SignUp = () => {
             span='soon'
             corner='#fff'
           />
+          <div className="signIn-stay-mobile">
+            <input type="checkbox" id="stay" />
+            <label htmlFor="stay" className='signIn-stay-text'>Stay logged in</label>
+          </div>
           <p className='signIn-forgot'>Already have an account? <Link to='/login' className='header-button-link'><span className='signIn-signup'>Sign in</span></Link></p>
           <div className="signIn-stay">
             <input type="checkbox" id='stay' />

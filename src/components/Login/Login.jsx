@@ -32,6 +32,10 @@ const Login = () => {
               link={key}
             />
           </div>
+          <div className="signIn-stay-mobile">
+            <input type="checkbox" id="stay" />
+            <label htmlFor="stay" className='signIn-stay-text'>Stay logged in</label>
+          </div>
           <Button
             name='Sign in'
             color='#C3C4C3'

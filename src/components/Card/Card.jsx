@@ -10,7 +10,8 @@ const Card = ({ title, text, arrow, icon }) => {
       </div>
       <div className='explore-card-imgs'>
         <ReactSVG src={arrow} />
-        <ReactSVG src={icon} />
+        <ReactSVG src={icon} className='explore-card-icon' />
+        {/* <img src={icon} className='explore-card-icon' /> */}
       </div>
     </div>
   )

@@ -97,6 +97,10 @@
   display: none;
 }
 
+.signIn-stay-mobile {
+  display: none;
+}
+
 @media (max-width: 1310px) {
   .signIn {
     padding: 151px 24px;
@@ -132,5 +136,20 @@
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.24px;
+  }
+
+  .signIn-inputs {
+    width: 385px;
+    gap: 16px;
+  }
+
+  .signIn-stay-mobile {
+    display: flex;
+    gap: 6.85px;
+    width: 353px;
+  }
+
+  .signIn-stay {
+    display: none;
   }
 }

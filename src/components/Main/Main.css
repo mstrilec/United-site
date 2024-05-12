@@ -1,10 +1,29 @@
+.container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 .main-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 157px;
-  margin-left: calc((100% - 1440px) / 2 + 106px);
-  position: relative;
 }
 
 .trade-mobile {
@@ -15,7 +34,9 @@
 }
 
 .trade-pc {
+  position: relative;
   z-index: -2;
+  right: 0;
 }
 
 .main-title-subtitle {
@@ -332,6 +353,7 @@
   }
 
   .main-launching {
+    background-position: center;
     height: 100%;
     padding: 64px 0;
   }
@@ -350,6 +372,23 @@
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.56px;
+    padding: 0;
+  }
+
+  .timer-section-number {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1.12px;
+  }
+
+  .timer-section-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.32px;
   }
 
   .timer-section {
@@ -358,10 +397,12 @@
   }
 
   .products {
+    padding-top: 32px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
   }
 
   .product {

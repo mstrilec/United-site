@@ -21,3 +21,25 @@
   line-height: 140%;
   letter-spacing: 0.32px;
 }
+
+.navbar-item-content-footer {
+  display: flex;
+}
+
+.navbar-item-footer {
+  list-style: none;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navbar-item-link-footer {
+  color: #fff;
+  text-decoration: none;
+}

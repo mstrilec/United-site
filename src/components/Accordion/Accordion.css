@@ -30,3 +30,29 @@
   line-height: 140%;
   letter-spacing: 0.32px;
 }
+
+.faq-accordion-subtitle {
+  border-top: 1px solid #E8E8E8;
+}
+
+.accordion-title--open {
+  padding-bottom: 24px;
+}
+
+.accordion--open {
+  padding-top: 24px;
+}
+
+@media (max-width: 1265px) {
+  .faq-accordion-title {
+    text-align: start;
+  }
+
+  .accordion-title--open {
+    padding-bottom: 12px;
+  }
+  
+  .accordion--open {
+    padding-top: 12px;
+  }
+}

@@ -10,15 +10,19 @@ const Form = ({ logo }) => {
       <Input 
         placeholder='Email'
         corner='#131514'
+        border='#7F7F7F'
       />
       <Input 
         placeholder='Email'
         corner='#131514'
+        border='#7F7F7F'
       />
-      <Input
-        placeholder='Message'
-        corner='#131514'
-      />
+      <label className="signIn-input signIn-input-first-corner" style={{'--corner': '#131514', '--border': '#7F7F7F'}}>
+        <div className='signIn-input-second-corner' style={{'--corner': '#131514'}}></div>
+          <ReactSVG className='signIn-input-img' />
+          <textarea name='Message' rows='5' placeholder='Message' className='signIn-input-item signIn-input-item-textarea' />
+        <div/>
+      </label>
       <Button
         name='Send'
         color='#277F4D'
