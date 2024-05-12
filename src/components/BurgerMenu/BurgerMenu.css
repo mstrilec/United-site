@@ -32,7 +32,7 @@
 }
 
 
-@media (max-width: 1265px) {
+@media (max-width: 1104px) {
   .burger-menu {
     display: flex;
   }

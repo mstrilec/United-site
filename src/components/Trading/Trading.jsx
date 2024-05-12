@@ -69,7 +69,7 @@ const Trading = () => {
             <Button
               name='Start trading'
               color='#277F4D'
-              textColor='#FFF'
+              type='primary'
               corner='#161716'
               width='189px'
             />
@@ -235,7 +235,7 @@ const Trading = () => {
           <Button 
             name='Sign up now'
             color='#D6ECDF'
-            textColor='#144026'
+            type='secondary'
             corner='#319f60'
             width='149px'
           />

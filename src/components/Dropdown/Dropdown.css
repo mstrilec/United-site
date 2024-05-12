@@ -82,6 +82,13 @@
   z-index: 10000;
 }
 
+.list-footer-pc {
+  position: absolute;
+  background: #131514;
+  right: 0;
+  top: 0;
+}
+
 @media (max-width: 1265px) {
   .dropdown-list {
     position: relative;

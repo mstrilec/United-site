@@ -26,7 +26,7 @@ const Form = ({ logo }) => {
       <Button
         name='Send'
         color='#277F4D'
-        textColor='#FFFFFF'
+        type='primary'
         width='100%'
       />
     </form>

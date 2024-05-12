@@ -35,14 +35,11 @@ const Footer = () => {
             <div className="footer-nav-items">
               <div className="footer-nav-item">
                 <h6 className="nav-item-title">About</h6>
-                <ul className='nav-item-list nav-item-list--mobile'>
-                  <li className='nav-item-list-item'>Markets</li>
-                  <li className='nav-item-list-item'>Buy Crypto<ReactSVG src={arrowRight} /></li>
-                  <li className='nav-item-list-item'>Markets</li>
-                  <li className='nav-item-list-item'>Spot<ReactSVG src={arrowRight} /></li>
-                  <li className='nav-item-list-item'>Futures<ReactSVG src={arrowRight} /></li>
-                  <li className='nav-item-list-item'>Learn<span className='navbar-item-soon'>coming soon</span></li>
-                </ul>
+                  <ul className='navbar-list-footer'>
+                    {navbarList.map((obj, index) => {
+                      return <NavItem obj={obj} key={index} type={'-footer'} footer={true} />
+                    })}
+                  </ul>
               </div>
 
               <div className="footer-nav-item">

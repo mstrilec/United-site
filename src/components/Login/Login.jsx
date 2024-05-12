@@ -12,8 +12,8 @@ import Input from '../Input/Input'
 const Login = () => {
   return (
     <div className='signIn-page'>
-      <div>
-          <img src={signInBg} className='signIn-bg' />
+      <div className='signIn-bg-block'>
+          <img src={signInBg} className='signIn-bg' loading="lazy" />
       </div>
       <div className='signIn'>
         <span className='login-soon'>coming soon</span>
@@ -39,7 +39,7 @@ const Login = () => {
           <Button
             name='Sign in'
             color='#C3C4C3'
-            textColor='#F9F9F9'
+            type='primary'
             width='385px'
             span='soon'
             corner='#fff'

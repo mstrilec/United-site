@@ -18,7 +18,7 @@ const Header = () => {
           <Button 
             name='Log in'
             color='#D6ECDF'
-            textColor='#144026'
+            type='secondary'
             corner='#fff'
             width='106px'
           />
@@ -27,7 +27,7 @@ const Header = () => {
           <Button
             name='Sign in'
             color='#277F4D'
-            textColor='#FFF'
+            type='primary'
             corner='#fff'
             width='106px'
           />

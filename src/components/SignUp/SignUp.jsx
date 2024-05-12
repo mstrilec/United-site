@@ -14,7 +14,7 @@ import Input from '../Input/Input'
 const SignUp = () => {
   return (
     <div className='signIn-page'>
-      <div>
+      <div className='signIn-bg-block'>
           <img src={signUpBg} className='signIn-bg' />
       </div>
       <div className='signIn'>
@@ -40,7 +40,7 @@ const SignUp = () => {
           <Button
             name='Sign up'
             color='#C3C4C3'
-            textColor='#F9F9F9'
+            type='primary'
             width='385px'
             span='soon'
             corner='#fff'

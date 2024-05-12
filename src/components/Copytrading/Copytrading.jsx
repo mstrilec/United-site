@@ -18,6 +18,7 @@ import CopytradingImg from '../../assets/copytrading.png'
 import TestImage from '../../assets/testimage.png'
 import Copytrading_Mob_Down from '../../assets/copytrading-mob-down.png'
 import Copytrading_Mob_Right from '../../assets/copytrading-mob-right.png'
+import { Link } from "react-router-dom";
 
 
 
@@ -56,12 +57,15 @@ const Copytrading = () => {
                         Invest like <br/> United’s top investors
                     </div>
 
-                    <Button
-                    name='START COPYING'
-                    color='#D6ECDF'
-                    textColor='#144026'
-                    corner='#319f60'
-                    />
+                    <Link to='/signup'>
+                        <Button
+                            name='START COPYING'
+                            color='#D6ECDF'
+                            type='secondary'
+                            corner='#319f60'
+                            width='186px'
+                        />
+                    </Link>
 
                     </div>
                 </div>
@@ -168,12 +172,15 @@ const Copytrading = () => {
 
              <div className='plus-button'>
 
-                <Button
-                    name='join now'
-                    color='#277F4D'
-                    textColor='#FFFFFF'
-                    corner='#fff'
-                />
+                <Link to='/signup'>
+                    <Button
+                        name='join now'
+                        color='#277F4D'
+                        type='primary'
+                        corner='#fff'
+                        width='173px'
+                    />
+                </Link>
                 </div>
         </div>
 
@@ -250,13 +257,16 @@ const Copytrading = () => {
                 </div>
 
                 <div className='button-community'>
-                <Button
-                    name='Discover Traders'
-                    color='#277F4D'
-                    textColor='#FFFFFF'
-                    fix='fix-button-corners'
-                    corner='#fff'
-                />
+                <Link to='/signup'>
+                    <Button
+                        name='Discover Traders'
+                        color='#277F4D'
+                        type='primary'
+                        fix='fix-button-corners'
+                        corner='#fff'
+                        width='220px'
+                    />
+                </Link>
                 </div>
 
                 <div className='subtile-community'>
@@ -282,7 +292,7 @@ const Copytrading = () => {
 
 
         <div className='copytrading-test'>
-            <div className='container'>
+            <div className='copytrading-container'>
 
                 <div className='left-test'>
                     <img className='test-image' src={TestImage}></img>
@@ -305,14 +315,17 @@ const Copytrading = () => {
                         practise with.
                     </div>
 
-                    <div className='Join United'>
-                    <Button
-                        name='Join United'
-                        color='#D6ECDF'
-                        textColor='#144026'
-                        corner='#131514'
-                        fix='fix-button-corners'
-                    />
+                    <div className='join-united'>
+                    <Link to='/signup' className="test-button">
+                        <Button
+                            name='Join United'
+                            color='#D6ECDF'
+                            type='secondary'
+                            corner='#131514'
+                            fix='fix-button-corners'
+                            width='159px'
+                        />
+                    </Link>
                     </div>
 
                     <div className='subtitle-test'>
@@ -320,7 +333,7 @@ const Copytrading = () => {
                     </div>
 
                     <div className='subtitle-test-mob'>
-                        United is a multi-asset investment platform. The value of<br/> your investments may go up or down. Your <br/>capital is at risk.
+                        United is a multi-asset investment platform. The value of your investments may go up or down. Your capital is at risk.
                     </div>
 
 

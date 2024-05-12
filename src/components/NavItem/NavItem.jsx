@@ -7,12 +7,18 @@ import arrowUp from '../../assets/arrow-up.svg'
 import arrowUpWhite from '../../assets/arrow-up-white.svg'
 import arrowDownWhite from '../../assets/arrow-down-white.svg'
 import { Link } from 'react-router-dom';
+import DropDownFooter from '../DropDownFooter/DropDownFooter';
+import footerArrowRight from '../../assets/footer-arrow-right.svg'
+import footerArrowLeft from '../../assets/left-chevron-svgrepo-com.svg'
 
 
-const NavItem = ({ obj, index, menuOpen, type }) => {
+const NavItem = ({ obj, index, menuOpen, type, footer }) => {
   const [dropdown, setDropdown] = useState(false);
-  const iconUp = type ? arrowUpWhite : arrowUp;
-  const iconDown = type ? arrowDownWhite : arrow;
+  let iconUp = type ? arrowUpWhite : arrowUp;
+  let iconDown = type ? arrowDownWhite : arrow;
+
+  iconUp = footer ? footerArrowLeft : iconUp
+  iconDown = footer ? footerArrowRight : iconDown
 
   const toggleDropdown = () => {
     setDropdown(!dropdown);
@@ -30,7 +36,7 @@ const NavItem = ({ obj, index, menuOpen, type }) => {
     <Link to={obj.to ? '/' + obj.to : ''} className={`navbar-item-link${type ? type : ''}`}>
       <li 
         key={index} 
-        className={menuOpen ? 'navbar-item-open' : `navbar-item${type ? type : ''}`}
+        className={menuOpen ? 'navbar-item-open' : `navbar-item${type ? type : ''}${footer ? ' navbar-item-li--footer' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -44,7 +50,11 @@ const NavItem = ({ obj, index, menuOpen, type }) => {
             />
           )}
         </div>
-        {dropdown && obj.dropdown && <Dropdown submenus={obj.dropdown} menuOpen={menuOpen} type={type} />}
+        {dropdown && obj.dropdown && (
+          !footer ? 
+            <Dropdown submenus={obj.dropdown} menuOpen={menuOpen} type={type} /> 
+            : <DropDownFooter submenus={obj.dropdown} menuOpen={menuOpen} type={type} />
+        )}
       </li>
     </Link>
   );

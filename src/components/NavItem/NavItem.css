@@ -39,7 +39,15 @@
   gap: 16px;
 }
 
+.navbar-item-footer-pc {
+  position: relative;
+}
+
 .navbar-item-link-footer {
   color: #fff;
   text-decoration: none;
+}
+
+.navbar-item-li--footer {
+  position: relative;
 }

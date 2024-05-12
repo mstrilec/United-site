@@ -76,7 +76,7 @@ const Main = () => {
 
   return (
     <main className='main'>
-      <div className='main-block container-block'>
+      <div className='main-block'>
         <div className="main-block-left-side">
           <div className="main-title-subtitle">
             <h2 className='main-title'>Low fees,<br /><span className='main-title-second'>high perfomance</span></h2>
@@ -87,7 +87,7 @@ const Main = () => {
             <Button
               name='Start investing'
               color='#277F4D'
-              textColor='#FFF'
+              type='primary'
               rightSvg={arrowDiagonal}
               corner='#fff'
               fix='fix-button-corners'
@@ -108,10 +108,12 @@ const Main = () => {
           </div>
         </div>
 
-        <img src={tradingForMobile} className='trade-mobile-for-mobile' />
-        <img src={tradingForPc} className='trade-pc-for-pc' />
-        <img src={tradeMobile} alt="Trade" className='trade-mobile' />
-        <img src={tradePc} alt="Trade" className='trade-pc' />
+        <div className='main-block-images'>
+          <img src={tradingForPc} className='trade-pc-for-pc' />
+          <img src={tradingForMobile} className='trade-mobile-for-mobile' />
+          <img src={tradeMobile} alt="Trade" className='trade-mobile' />
+          <img src={tradePc} alt="Trade" className='trade-pc' />
+        </div>
       </div>
 
       <section className="main-launching">
@@ -140,7 +142,7 @@ const Main = () => {
           <Button
             name='Join now'
             color='#277F4D'
-            textColor='#FFF'
+            type='primary'
             width='137px'
           />
         </Link>
@@ -184,7 +186,7 @@ const Main = () => {
             <Button
               name='Join now'
               color='#277F4D'
-              textColor='#FFF'
+              type='primary'
               corner='#fff'
               width='137px'
             />
@@ -201,7 +203,7 @@ const Main = () => {
             <Button
               name='Facebook'
               color='#D6ECDF'
-              textColor='#1D5F3A'
+              type='secondary'
               leftSvg={facebook}
               corner='#319f60'
               style='join-mobile-button'
@@ -212,7 +214,7 @@ const Main = () => {
             <Button
               name='Telegram'
               color='#D6ECDF'
-              textColor='#1D5F3A'
+              type='secondary'
               leftSvg={telegram}
               corner='#319f60'
               style='join-mobile-button'

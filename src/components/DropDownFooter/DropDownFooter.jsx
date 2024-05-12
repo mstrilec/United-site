@@ -1,9 +1,10 @@
+import React from 'react'
 import { Link } from 'react-router-dom';
-import './Dropdown.css'
+import './DropdownFooter.css'
 
-const Dropdown = ({ submenus, menuOpen, type, }) => {
+const DropDownFooter = ({ submenus, menuOpen, type, }) => {
   return (
-    <ul className={`dropdown-list${type ? type : ''}`}>
+    <ul className={`dropdown-list${type ? type : ''} dropdown-list-footer-pc`}>
       {submenus.map((submenu, index) => (
         <Link href={submenu.url} className={`menu-item${type ? type : ''}`} key={index}>
           <li className={`menu-items${type ? type : ''}`}>
@@ -15,4 +16,4 @@ const Dropdown = ({ submenus, menuOpen, type, }) => {
   );
 };
 
-export default Dropdown;
+export default DropDownFooter

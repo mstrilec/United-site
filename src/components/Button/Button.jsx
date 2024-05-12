@@ -7,7 +7,6 @@ import vectorLeft from '../../assets/VectorLeft.svg'
 const Button = ({
   name,
   color,
-  textColor,
   rightSvg,
   leftSvg,
   width,
@@ -15,11 +14,26 @@ const Button = ({
   corner,
   style,
   fix,
+  type,
 }) => {
+  const buttonStyle = type === 'primary' ? {
+    background: '#277F4D',
+    color: '#FFFFFF',
+    '--btn-hover': '#144026',
+    '--text-hover': '#FFFFFF',
+  } : {
+    background: '#D6ECDF',
+    color: '#144026',
+    '--btn-hover': '#5AB280',
+    '--text-hover': '#FFFFFF',
+  };
+
+  const cornerStyle = type === 'primary' ? '#277F4D' : '#D6ECDF'
+
   return (
-    <div className={'btn ' + fix} style={{ width: width, '--right-corner': corner, '--right-corner-border': color }}>
-      <div className='btn-second-corner' style={{ '--left-corner': corner, '--left-corner-border': color }}>
-        <button className={'button ' + style} style={{ background: color, color: textColor, width: width, '--btn-hover': textColor, '--text-hover': color }}>
+    <div className={'btn ' + fix} style={{ width: width, '--right-corner': corner, '--right-corner-border': cornerStyle }}>
+      <div className='btn-second-corner' style={{ '--left-corner': corner, '--left-corner-border': cornerStyle }}>
+        <button className={'button ' + style} style={{ width: width, ...buttonStyle }}>
           {leftSvg ? (
             <img src={leftSvg} alt='leftSvg' className='leftSvg' />
           ) : null} {name} {span ? (<span className='navbar-item-soon'>{span}</span>) : null} {rightSvg ? (
@@ -28,7 +42,7 @@ const Button = ({
         </button>
       </div>
     </div>
-  )
+  );
 }
 
 export default Button
