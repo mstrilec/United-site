@@ -7,7 +7,7 @@ const Input = ({ placeholder, link, corner, border }) => {
     <label className="signIn-input signIn-input-first-corner" style={{'--corner': corner, '--border': border}}>
       <div className='signIn-input-second-corner' style={{'--corner': corner, '--border': border}}></div>
         <ReactSVG src={link} className='signIn-input-img' />
-        <input type="text" placeholder={placeholder} className='signIn-input-item' />
+        <input type="text" maxLength="33" placeholder={placeholder} className='signIn-input-item' />
       <div/>
     </label>
   )

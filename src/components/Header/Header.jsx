@@ -10,7 +10,7 @@ const Header = () => {
   const [navbarProps, setNavbarProps] = useState({});
 
   return (
-    <header className='header container'>
+    <header className='header container-block'>
       <Navbar {...navbarProps} />
       <BurgerMenu setNavbarProps={setNavbarProps} />
       <div className='header-buttons'>
@@ -20,6 +20,7 @@ const Header = () => {
             color='#D6ECDF'
             textColor='#144026'
             corner='#fff'
+            width='106px'
           />
         </Link>
         <Link to='/signup' className='header-button-link'>
@@ -28,6 +29,7 @@ const Header = () => {
             color='#277F4D'
             textColor='#FFF'
             corner='#fff'
+            width='106px'
           />
         </Link>
       </div>

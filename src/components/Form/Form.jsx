@@ -8,7 +8,7 @@ const Form = ({ logo }) => {
     <form className='contact-container'>
       <ReactSVG src={logo} />
       <Input 
-        placeholder='Email'
+        placeholder='Name'
         corner='#131514'
         border='#7F7F7F'
       />

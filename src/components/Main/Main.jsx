@@ -17,17 +17,32 @@ import tradeMobile from '../../assets/TradeMobile.png'
 import tradingForMobile from '../../assets/trading-for-mob-mobile.svg'
 import tradingForPc from '../../assets/trading-for-mob-pc.svg'
 import { ReactSVG } from 'react-svg'
+import { Link } from 'react-router-dom'
 
 const Main = () => {
   const [timerDays, setTimerDays] = useState('00')
   const [timerHours, setTimerHours] = useState('00')
   const [timerMinutes, setTimerMinutes] = useState('00')
   const [timerSeconds, setTimerSeconds] = useState('00')
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1265);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1265);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   let interval = useRef();
+  const width = !isMobile ? '182px' : '100%'
 
   const startTimer = () => {
-    const countdownDate = new Date('May 13, 2024 00:00:00').getTime();
+    const countdownDate = new Date('Jul 1, 2024 00:00:00').getTime();
   
     interval.current = setInterval(() => {
       const now = new Date().getTime();
@@ -61,7 +76,7 @@ const Main = () => {
 
   return (
     <main className='main'>
-      <div className='main-block container'>
+      <div className='main-block container-block'>
         <div className="main-block-left-side">
           <div className="main-title-subtitle">
             <h2 className='main-title'>Low fees,<br /><span className='main-title-second'>high perfomance</span></h2>
@@ -76,6 +91,7 @@ const Main = () => {
               rightSvg={arrowDiagonal}
               corner='#fff'
               fix='fix-button-corners'
+              width='226px'
             />
             <div className="main-users">
               <div className="users">
@@ -120,52 +136,60 @@ const Main = () => {
           </section>
         </div>
 
-        <Button
-          name='Join now'
-          color='#277F4D'
-          textColor='#FFF'
-        />
+        <Link to='/signup'>
+          <Button
+            name='Join now'
+            color='#277F4D'
+            textColor='#FFF'
+            width='137px'
+          />
+        </Link>
       </section>
 
       <section className='main-products'>
         <h2 className='main-products-text'>Discover Our Products</h2>
-        <div className="products">
-          <div className="product-item">
-            <Product 
-              img={target}
-              title='Copy Trading'
-              subtitle='No. 1 In Copy Execution Time'
-              text='Best orderflow traders on our platform'
-            />
+        <div className='discover-items'>
+          <div className="products">
+            <div className="product-item">
+              <Product 
+                img={target}
+                title='Copy Trading'
+                subtitle='No. 1 In Copy Execution Time'
+                text='Best orderflow traders on our platform'
+              />
+            </div>
+            <div className="product-item">
+              <Product 
+                img={dandruff}
+                title='Spot'
+                subtitle='Abundant Crypto. 0 Trading Fees'
+                text='Fast Listings, Diverse Trading Pairs & Robust Trading Depth'
+              />
+            </div>
+            <div className="product-item">
+              <Product 
+                img={rocket}
+                title='United Benefits'
+                subtitle='Massive Airdrops, Free Participation'
+                text={
+                  <>
+                    Automatically participate in massive airdrops and <br/>
+                    enjoy trading fee discounts
+                  </>
+                }
+              />
+            </div>
           </div>
-          <div className="product-item">
-            <Product 
-              img={dandruff}
-              title='Spot'
-              subtitle='Abundant Crypto. 0 Trading Fees'
-              text='Fast Listings, Diverse Trading Pairs & Robust Trading Depth'
+          <Link to='/signup'>
+            <Button
+              name='Join now'
+              color='#277F4D'
+              textColor='#FFF'
+              corner='#fff'
+              width='137px'
             />
-          </div>
-          <div className="product-item">
-            <Product 
-              img={rocket}
-              title='United Benefits'
-              subtitle='Massive Airdrops, Free Participation'
-              text={
-                <>
-                  Automatically participate in massive airdrops and <br/>
-                  enjoy trading fee discounts
-                </>
-              }
-            />
-          </div>
+          </Link>
         </div>
-        <Button
-          name='Join now'
-          color='#277F4D'
-          textColor='#FFF'
-          corner='#fff'
-        />
       </section>
 
       <section className='main-join-block'>
@@ -173,22 +197,28 @@ const Main = () => {
         <h4 className='main-join-subtitle'>Always there for you</h4>
 
         <div className='main-join-buttons'>
-          <Button
-            name='Facebook'
-            color='#D6ECDF'
-            textColor='#1D5F3A'
-            leftSvg={facebook}
-            corner='#319f60'
-            style='join-mobile-button'
-          />
-          <Button
-            name='Telegram'
-            color='#D6ECDF'
-            textColor='#1D5F3A'
-            leftSvg={telegram}
-            corner='#319f60'
-            style='join-mobile-button'
-          />
+          <Link to='https://www.facebook.com/vorticunited/' className='button-link'>
+            <Button
+              name='Facebook'
+              color='#D6ECDF'
+              textColor='#1D5F3A'
+              leftSvg={facebook}
+              corner='#319f60'
+              style='join-mobile-button'
+              width={width}
+            />
+          </Link>
+          <Link to='https://t.me/vorticunited' className='button-link'>
+            <Button
+              name='Telegram'
+              color='#D6ECDF'
+              textColor='#1D5F3A'
+              leftSvg={telegram}
+              corner='#319f60'
+              style='join-mobile-button'
+              width={width}
+            />
+          </Link>
         </div>
       </section>
     </main>

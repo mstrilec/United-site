@@ -1,4 +1,4 @@
-.container {
+.container-block {
   position: relative;
 
   width: 100%;
@@ -17,6 +17,12 @@
   .container {
     max-width: 100%;
   }
+}
+
+.discover-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-block {
@@ -213,6 +219,7 @@
 
 .products {
   display: flex;
+  align-items: flex-end;
   gap: 88px;
   margin-bottom: 88px;
 }
@@ -449,11 +456,12 @@
   }
 
   .main-join-buttons {
-    width: 100%;
+    align-items: center;
     flex-direction: column;
+    width: 100%;
   }
 
-  .join-mobile-button {
+  .button-link {
     width: 100%;
   }
 }

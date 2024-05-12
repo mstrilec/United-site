@@ -7,7 +7,7 @@ export const navbarList = [
     title: 'Buy Crypto',
     dropdown: [
       {
-        title: 'MDebit/Credit Cardenu item',
+        title: 'Debit/Credit Card',
       },
       {
         title: 'Global Bank Transfer',
@@ -31,19 +31,19 @@ export const navbarList = [
     title: 'Spot',
     dropdown: [
       {
-        title: 'MDebit/Credit Cardenu item',
+        title: 'Spot',
       },
       {
-        title: 'Global Bank Transfer',
+        title: 'United Zone',
       },
       {
-        title: 'Quick Buy/Sell',
+        title: 'Launchpad',
       },
       {
-        title: 'P2P Trading',
+        title: 'Kickstarter',
       },
       {
-        title: 'United Mastercard',
+        title: 'Savings',
       },
     ]
   },
@@ -51,19 +51,10 @@ export const navbarList = [
     title: 'Futures',
     dropdown: [
       {
-        title: 'MDebit/Credit Cardenu item',
+        title: 'USDT Perpetual Futures',
       },
       {
-        title: 'Global Bank Transfer',
-      },
-      {
-        title: 'Quick Buy/Sell',
-      },
-      {
-        title: 'P2P Trading',
-      },
-      {
-        title: 'United Mastercard',
+        title: 'USDC Perpetual',
       },
     ]
   },

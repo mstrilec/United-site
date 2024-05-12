@@ -26,6 +26,7 @@ import Card from '../Card/Card'
 import SafeCard from '../SafeCard/SafeCard'
 import Form from '../Form/Form'
 import Coin from '../Coin/Coin'
+import { Link } from 'react-router-dom'
 
 const Trading = () => {
   return (
@@ -64,12 +65,15 @@ const Trading = () => {
           </div>
         </div>
         <div className='crypto-btn'>
-          <Button
-            name='Start trading'
-            color='#277F4D'
-            textColor='#FFF'
-            corner='#161716'
-          />
+          <Link to='/signup'>
+            <Button
+              name='Start trading'
+              color='#277F4D'
+              textColor='#FFF'
+              corner='#161716'
+              width='189px'
+            />
+          </Link>
         </div>
       </div>
 
@@ -227,12 +231,15 @@ const Trading = () => {
 
       <div className="start-block">
         <h2 className='start-title'>Start your crypto journey now!</h2>
-        <Button 
-          name='Sign up now'
-          color='#D6ECDF'
-          textColor='#144026'
-          corner='#319f60'
-        />
+        <Link to='/signup'>
+          <Button 
+            name='Sign up now'
+            color='#D6ECDF'
+            textColor='#144026'
+            corner='#319f60'
+            width='149px'
+          />
+        </Link>
       </div>
 
       <div className='contact-block'>
