@@ -33,7 +33,9 @@ const Copytrading = () => {
                     <div className="copytrading-title">Copy</div>
                     <img className="copytrading-img" src={CopytradingImg}></img>
                     <img className="copytrading-mob-down" src={ Copytrading_Mob_Down}></img>
-                    <img className="copytrading-mob-right" src={ Copytrading_Mob_Right}></img>
+                    <div className="copy-img-r">
+                        <img className="copytrading-mob-right" src={ Copytrading_Mob_Right}></img>
+                    </div>
                     <div className='copytrading-text'>Trading</div>
 
                     <div className='copytrading-mobile-text'>

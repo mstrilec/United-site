@@ -488,7 +488,7 @@
     }
     
     .community-image{
-        width: 400px;
+        width: 100%;
     }
 
     .test-title{
@@ -629,28 +629,14 @@
         padding-bottom: 24px;
     }
 
-    /* .plans-subtitle{
-        text-align: center;
-        padding: 0;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 140%;
-        padding-top: 16px;
-    } */
-
     .community-image {
-        width: 340px;
-        height: 355px;
+        width: 100%;
+        height: auto;
     }
 
     .copytrading-community,
     .container {
         padding: 65px 45px;
-    }
-
-    .community-image {
-        width: 300px;
-        height: 315px;
     }
 
     
@@ -752,6 +738,11 @@
         height: 390px;
     }
 
+    .right-img-com{
+        justify-content: center;
+        display: flex;
+    }
+
     .button-community{
         justify-content: center;
         display: flex;
@@ -840,7 +831,7 @@
         left: 25%;
         height: 180px;
         transform: translateX(-50%);
-        bottom: 50%;
+        bottom: 35%;
         height: 15%;
     }
 
@@ -848,7 +839,7 @@
     .copytrading-mob-right{
         position: absolute;
         z-index: 1;
-        left: 100%;
+        left: 70%;
         height: 30%;
         transform: translateX(-50%);
     }
@@ -882,16 +873,6 @@
     }
 }
 
-@media( max-width: 480px){
-    .copytrading-mob-right{
-        position: absolute;
-        z-index: 1;
-        left: 110%;
-        height: 30%;
-        transform: translateX(-50%);
-    }
-
-}
 
 @media( max-width: 450px){
     .copytrading-mob-down{
@@ -900,7 +881,7 @@
         left: 30%;
         transform: translateX(-50%);
         bottom: normal;
-        height: 13%;
+        height: 12%;
         top: 50%;
     }
 
@@ -908,8 +889,7 @@
     .copytrading-mob-right{
         position: absolute;
         z-index: 1;
-        left: 115%;
-        height: 25%;
+        height: 23%;
         transform: translateX(-50%);
     }
 }
