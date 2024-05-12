@@ -16,6 +16,9 @@ import Plan_Icon3 from '../../assets/plan-icon3.png'
 import Community from '../../assets/community.png'
 import CopytradingImg from '../../assets/copytrading.png'
 import TestImage from '../../assets/testimage.png'
+import Copytrading_Mob_Down from '../../assets/copytrading-mob-down.png'
+import Copytrading_Mob_Right from '../../assets/copytrading-mob-right.png'
+
 
 
 
@@ -29,7 +32,16 @@ const Copytrading = () => {
                 <div className="copytrading-maintop">
                     <div className="copytrading-title">Copy</div>
                     <img className="copytrading-img" src={CopytradingImg}></img>
+                    <img className="copytrading-mob-down" src={ Copytrading_Mob_Down}></img>
+                    <div className="copy-img-r">
+                        <img className="copytrading-mob-right" src={ Copytrading_Mob_Right}></img>
+                    </div>
                     <div className='copytrading-text'>Trading</div>
+
+                    <div className='copytrading-mobile-text'>
+                        <div className="copytrading-title mobile-copy-title">Copy <a className='copytrading-text mobile-copy-text'>Trading</a> </div>
+                    </div> 
+                    
                 </div>
         </div>
 
@@ -38,6 +50,10 @@ const Copytrading = () => {
                 <div className='copytrading-maindown'>
                     <div className='copytrading-downtext'>
                         Invest like United’s top investors
+                    </div>
+
+                    <div className='copytrading-downtext mobile-copytrading'>
+                        Invest like <br/> United’s top investors
                     </div>
 
                     <Button
@@ -51,11 +67,23 @@ const Copytrading = () => {
                 </div>
 
         <div className='copytrading-pluses'>
+
             <div className="plus-title">
                 Why copy top-performing traders?
             </div>
+
+            <div className="plus-title mobile-title-plus">
+                Why copy<br/> top-performing <br/>traders?
+            </div>
+
             <div className='plus-subtitle'>
               Invest like our best-performing traders: simply choose an investor to copy, and when <br/>they trade, so do you.
+            </div>
+
+            <div className='plus-subtitle mobile-subtitle-plus'>
+              Invest like our best-performing traders:
+              <br/> simply choose an investor to copy, and
+              <br/> when they trade, so do you.
             </div>
 
             <div className='plus'>
@@ -153,10 +181,20 @@ const Copytrading = () => {
             <div className='plans-title'>
                 How it works
             </div>
+            
             <div className='plans-subtitle'>
                 Copy Trading is built to be simple and intuitive. Just find the trader you wish to copy<br/>
                 Trading [linked to login/signup page] page – there, you can search for<br/>
                 the kind of trader you’re looking for.
+            </div>
+
+            <div className='plans-subtitle mobile-plans'>
+                Copy Trading is built to be simple and <br/>
+                intuitive. Just find the trader you wish to<br/>
+                copy Trading [linked to<br/>
+                login/signup page] page – there, you can<br/>
+                search for the kind of trader you’re<br/> 
+                looking for.
             </div>
 
             <div className='plans-items'>
