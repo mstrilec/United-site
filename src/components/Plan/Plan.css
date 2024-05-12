@@ -40,3 +40,24 @@
     }
 
   }
+
+
+  @media ( max-width: 750px ){
+
+    .plan-title{
+      font-size: 16px;
+    }
+
+    .plan-image{
+      width: 50px;
+    }
+
+  }
+
+  @media ( max-width: 650px ){
+
+    .plan{
+      flex-direction: row;
+    }
+
+  }

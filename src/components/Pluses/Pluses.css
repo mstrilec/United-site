@@ -89,3 +89,19 @@
 
 }
 
+@media ( max-width: 650px ){
+
+  .pluses{
+    flex-direction: row;
+  }
+
+  .pluses-title,
+  .pluses-text{
+    text-align: left;
+  }
+
+  .pluses-image{
+    width: 48px;
+  }
+
+}
