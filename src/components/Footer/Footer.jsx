@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <section className='footer-section'>
-      <footer className='footer container-block'>
+      <footer className='footer container-block mob-pad'>
         {!isMobile ? (
           <div className="footer-nav">
             <ReactSVG src={footerLogo} className='footer-logo' />

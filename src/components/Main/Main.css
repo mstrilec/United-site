@@ -300,9 +300,32 @@
   }
 }
 
+@media (max-width: 1260px) {
+  .main-block {
+    margin-left: 0;
+    padding-left: 40px;
+  }
+
+  .trade-pc {
+    width: 80%;
+    right: -20%;
+  }
+  
+  .trade-mobile {
+    height: 90%;
+    left: 10%;
+  }
+}
+
 @media (max-width: 1095px) {
   .product-item {
     width: 260px;
+  }
+}
+
+@media (max-width: 1044px) {
+  .trade-mobile {
+    height: 100%;
   }
 }
 

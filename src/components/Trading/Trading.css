@@ -173,8 +173,9 @@
 
 .safe-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 80px;
+  gap: 45px;
 }
 
 .safe-card {
@@ -278,11 +279,33 @@
   resize: none;
 }
 
+.safe-card-box {
+  display: flex;
+  gap: 45px;
+}
+
 @media (max-width: 1545px) {
   .explore-card {
     width: auto;
     height: 140px;
     padding: 20px;
+  }
+
+  .contact-title {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .safe-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1170px) {
+  .contact-title {
+    width: 40%;
   }
 }
 
@@ -338,34 +361,6 @@
     letter-spacing: 0.56px;
   }
 
-  .safe-cards {
-    padding-top: 32px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .safe-card {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .safe-card-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 24px;
-  }
-
-  .safe-card-title {
-    text-align: start;
-    padding: 0;
-  }
-
-  .safe-card-subtitle {
-    text-align: start;
-  }
-
   .faq-block {
     padding: 64px 20px;
   }
@@ -377,6 +372,7 @@
 
   .contact-block {
     flex-direction: column;
+    align-items: center;
     background: none;
     padding: 64px 20px;
   }
@@ -387,16 +383,11 @@
   }
 
   .contact-title {
+    width: 100%;
     text-align: center;
     font-size: 28px;
     line-height: 120%;
     letter-spacing: 0.56px;
-  }
-
-  .safe-card-img {
-    width: 48px;
-    height: 48px;
-    margin-top: 24px;
   }
 
   /* .explore-card-icon {
@@ -432,5 +423,44 @@
 
   .explore-card {
     height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .safe-cards {
+    padding-top: 32px;
+  }
+
+  .safe-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .safe-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+
+  .safe-card-title {
+    text-align: start;
+    padding: 0;
+  }
+
+  .safe-card-subtitle {
+    text-align: start;
+  }
+
+  .safe-card-img {
+    width: 48px;
+    height: 48px;
+    margin-top: 24px;
+  }
+
+  .safe-card-box {
+    flex-direction: column;
+    width: 100%;
   }
 }

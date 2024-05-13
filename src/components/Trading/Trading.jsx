@@ -169,58 +169,62 @@ const Trading = () => {
       <div className='safe-block'>
         <h2 className="safe-title">Your Safe<br/>and Trusted Crypto Exchange</h2>
         <div className='safe-cards'>
-          <SafeCard 
-            title={
-              <>
-                Secure Asset<br/>Storage
-              </>
-            }
-            text={
-              <>
-                Our industry-leading encryption<br/>and storage systems ensure that<br/>your assets are always safe and<br/>secure.
-              </>
-            }
-            icon={storage}
-          />
-          <SafeCard 
-            title={
-              <>
-                Strong Account<br/>Security
-              </>
-            }
-            text={
-              <>
-                We adhere to the highest security<br/>standards and implement the<br/>strictest security practices to<br/>keep your account secure.
-              </>
-            }
-            icon={account}
-          />
-          <SafeCard 
-            title={
-              <>
-                Trusted <br/>Platform
-              </>
-            }
-            text={
-              <>
-                We have a secure-by-design<br/>foundation in place to ensure<br/>rapid detection and response to<br/>any cyber attacks.
-              </>
-            }
-            icon={platform}
-          />
-          <SafeCard 
-            title={
-              <>
-                PoR<br/>Asset Transparency
-              </>
-            }
-            text={
-              <>
-                PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.
-              </>
-            }
-            icon={tick}
-          />
+          <div className='safe-card-box'>
+            <SafeCard 
+              title={
+                <>
+                  Secure Asset<br/>Storage
+                </>
+              }
+              text={
+                <>
+                  Our industry-leading encryption<br/>and storage systems ensure that<br/>your assets are always safe and<br/>secure.
+                </>
+              }
+              icon={storage}
+            />
+            <SafeCard 
+              title={
+                <>
+                  Strong Account<br/>Security
+                </>
+              }
+              text={
+                <>
+                  We adhere to the highest security<br/>standards and implement the<br/>strictest security practices to<br/>keep your account secure.
+                </>
+              }
+              icon={account}
+            />
+          </div>
+          <div className='safe-card-box'>
+            <SafeCard 
+              title={
+                <>
+                  Trusted <br/>Platform
+                </>
+              }
+              text={
+                <>
+                  We have a secure-by-design<br/>foundation in place to ensure<br/>rapid detection and response to<br/>any cyber attacks.
+                </>
+              }
+              icon={platform}
+            />
+            <SafeCard 
+              title={
+                <>
+                  PoR<br/>Asset Transparency
+                </>
+              }
+              text={
+                <>
+                  PoR (Proof of Reserves) is a<br/>widely used method to prove<br/>custody of assets on the<br/>blockchain, confirming that<br/>United has the funds that cover<br/>all user assets on our books.
+                </>
+              }
+              icon={tick}
+            />
+          </div>
         </div>
       </div>
 
