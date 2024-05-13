@@ -31,8 +31,14 @@
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
+@media (max-width: 1110px) {
+  .navbar-list {
+    gap: 20px;
+  }
+}
 
-@media (max-width: 1104px) {
+
+@media (max-width: 1000px) {
   .burger-menu {
     display: flex;
   }

@@ -75,6 +75,10 @@
 
 .explore-block {
   padding: 106px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .explore-title {
@@ -139,6 +143,8 @@
 }
 
 .explore-products {
+  gap: 40px;
+  width: fit-content;
   padding-top: 80px;
   display: flex;
   justify-content: space-around;
@@ -275,12 +281,12 @@
 @media (max-width: 1545px) {
   .explore-card {
     width: auto;
-    height: auto;
+    height: 140px;
     padding: 20px;
   }
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1000px) {
   .crypto-coins {
     display: flex;
     flex-direction: column;
@@ -321,29 +327,6 @@
   .crypto-title {
     font-size: 28px;
     letter-spacing: 0.56px;
-  }
-
-  .explore-block {
-    padding: 64px 20px;
-  }
-
-  .explore-title {
-    font-size: 28px;
-    letter-spacing: 0.56px;
-  }
-
-  .explore-products {
-    padding-top: 16px;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .explore-products-first-col {
-    gap: 16px;
-  }
-
-  .explore-products-second-col {
-    gap: 16px;
   }
 
   .safe-block {
@@ -421,4 +404,33 @@
     width: 30px;
     margin-bottom: 10px;
   } */
+}
+
+@media (max-width: 1109px) {
+  .explore-block {
+    padding: 64px 20px;
+  }
+
+  .explore-title {
+    font-size: 28px;
+    letter-spacing: 0.56px;
+  }
+
+  .explore-products {
+    padding-top: 16px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .explore-products-first-col {
+    gap: 16px;
+  }
+
+  .explore-products-second-col {
+    gap: 16px;
+  }
+
+  .explore-card {
+    height: auto;
+  }
 }

@@ -89,7 +89,7 @@
   top: 0;
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1000px) {
   .dropdown-list {
     position: relative;
   }

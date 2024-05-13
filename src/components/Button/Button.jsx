@@ -15,6 +15,7 @@ const Button = ({
   style,
   fix,
   type,
+  className,
 }) => {
   const buttonStyle = type === 'primary' ? {
     background: '#277F4D',
@@ -31,9 +32,9 @@ const Button = ({
   const cornerStyle = type === 'primary' ? '#277F4D' : '#D6ECDF'
 
   return (
-    <div className={'btn ' + fix} style={{ width: width, '--right-corner': corner, '--right-corner-border': cornerStyle }}>
+    <div className={'btn ' + fix + ` ${className}`} style={{ width: width, '--right-corner': corner, '--right-corner-border': cornerStyle }}>
       <div className='btn-second-corner' style={{ '--left-corner': corner, '--left-corner-border': cornerStyle }}>
-        <button className={'button ' + style} style={{ width: width, ...buttonStyle }}>
+        <button className={'button ' + style + ` ${className}`} style={{ width: width, ...buttonStyle }}>
           {leftSvg ? (
             <img src={leftSvg} alt='leftSvg' className='leftSvg' />
           ) : null} {name} {span ? (<span className='navbar-item-soon'>{span}</span>) : null} {rightSvg ? (

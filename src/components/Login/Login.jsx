@@ -43,6 +43,7 @@ const Login = () => {
             width='385px'
             span='soon'
             corner='#fff'
+            className='signIn-button'
           />
           <p className='signIn-forgot'>Don't have an account? <Link to='/signup' className='header-button-link'><span className='signIn-signup'>Sign up</span></Link></p>
           <div className="signIn-stay">

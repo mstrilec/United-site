@@ -44,6 +44,7 @@ const SignUp = () => {
             width='385px'
             span='soon'
             corner='#fff'
+            className='signIn-button'
           />
           <div className="signIn-stay-mobile">
             <input type="checkbox" id="stay" />
