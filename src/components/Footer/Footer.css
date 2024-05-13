@@ -108,6 +108,7 @@
 
 .contact-container-footer {
   width: 100% !important;
+  gap: 16px !important;
 }
 
 @media (max-width: 1225px) {
