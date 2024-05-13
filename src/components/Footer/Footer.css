@@ -51,7 +51,6 @@
 
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.32px;
 }
@@ -70,7 +69,7 @@
 .footer-apps {
   display: flex;
   gap: 8px;
-  margin-top: 37px;
+  margin-top: 134px;
 }
 
 .footer-text {
@@ -110,6 +109,7 @@
   width: 100% !important;
   gap: 16px !important;
 }
+
 
 @media (max-width: 1225px) {
   .mob-pad {
@@ -153,5 +153,13 @@
   font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.4px;
+  }
+
+  .footer-form {
+    width: 100%;
+  }
+
+  .contact-container-footer {
+    margin-top: 0 !important;
   }
 }

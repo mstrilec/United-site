@@ -84,8 +84,6 @@ const Footer = () => {
                 <h6 className="nav-item-title">Contact Us</h6>
                 <ul className='nav-item-list nav-item-list--mobile'>
                   <li className='nav-item-list-item'>info@united.com</li>
-                  <li className='nav-item-list-item'>(406) 555-0120</li>
-                  <li className='nav-item-list-item'>(808) 555-0910</li>
                   <li className='nav-item-list-item'>567 Pine Road, Riverdale, NY</li>
                 </ul>
 
@@ -106,7 +104,31 @@ const Footer = () => {
           </div>
         ) : (
           <div className='footer-mobile'>
-            <img src={footerLogoMobile} className='footer-logo' />
+            <div className="footer-form">
+              <img src={footerLogoMobile} className='footer-logo' />
+              <form className='contact-container contact-container-footer' onSubmit={handleSubmit}>
+                <Input
+                  placeholder='Email'
+                  corner='#131514'
+                  border='#7F7F7F'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  pad='6px 0 6px 0'
+                />
+
+                <div className='contact-btn-block'>
+                  <Button
+                    name='Send'
+                    color='#277F4D'
+                    type='primary'
+                    width='100%'
+                    onClick={notify}
+                    height='30px'
+                    disabled={!isFormValid}
+                  />
+                </div>
+              </form>
+            </div>
             <AccordionFooter
               title="About"
               dropdown={
