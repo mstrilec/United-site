@@ -19,9 +19,10 @@ import TestImage from '../../assets/testimage.png'
 import Copytrading_Mob_Down from '../../assets/copytrading-mob-down.png'
 import Copytrading_Mob_Right from '../../assets/copytrading-mob-right.png'
 import { Link } from "react-router-dom";
-
-
-
+import { ReactSVG } from "react-svg";
+import leftVector from '../../assets/left-vector.svg'
+import rightVector from '../../assets/right-vector.svg'
+import mobileVector from '../../assets/mobile-vector.svg'
 
 const Copytrading = () => {
 
@@ -185,6 +186,7 @@ const Copytrading = () => {
         </div>
 
         <div className='work-plan'>
+            <ReactSVG src={leftVector} className="work-plan-left-vector" />
             <div className='plans-title'>
                 How it works
             </div>
@@ -228,6 +230,8 @@ const Copytrading = () => {
                     </div>
 
             </div>
+            <ReactSVG src={rightVector} className="work-plan-right-vector" />
+            <ReactSVG src={mobileVector} className="work-plan-mobile-vector" />
         </div>
 
         <div className="copytrading-community">

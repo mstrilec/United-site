@@ -84,15 +84,17 @@ const Main = () => {
             currencies with a trusted trader.</p>
           </div>
           <div className='main-investing-block'>
-            <Button
-              name='Start investing'
-              color='#277F4D'
-              type='primary'
-              rightSvg={arrowDiagonal}
-              corner='#fff'
-              fix='fix-button-corners'
-              width='226px'
-            />
+            <Link to='/trading'>
+              <Button
+                name='Start investing'
+                color='#277F4D'
+                type='primary'
+                rightSvg={arrowDiagonal}
+                corner='#fff'
+                fix='fix-button-corners'
+                width='226px'
+              />
+            </Link>
             <div className="main-users">
               <div className="users">
                 <img src={user1} alt="User" className='user1' />

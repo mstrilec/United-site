@@ -90,3 +90,10 @@
   width: fit-content;
   height: fit-content;
 }
+
+
+.button:disabled,
+.button[disabled]{
+  background-color: #C3C4C3 !important;
+  color: #F9F9F9 !important;
+}

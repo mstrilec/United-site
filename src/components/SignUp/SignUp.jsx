@@ -21,7 +21,7 @@ const SignUp = () => {
         <Link to='/home' className='signIn-logo'><ReactSVG src={logo} /></Link>
 
         <div className="signIn-block">
-          <h3 className="signIn-title">Sign In</h3>
+          <h3 className="signIn-title">Sign Up</h3>
           <h4 className="signIn-subtitle">Login to manage your account</h4>
           <div className="signIn-inputs">
             <Input
@@ -45,6 +45,7 @@ const SignUp = () => {
             span='soon'
             corner='#fff'
             className='signIn-button'
+            disabled={true}
           />
           <div className="signIn-stay-mobile">
             <input type="checkbox" id="stay" />

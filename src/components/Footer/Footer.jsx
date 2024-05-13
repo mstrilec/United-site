@@ -10,6 +10,9 @@ import footerLogoMobile from '../../assets/footer-logo.png'
 import NavItem from '../NavItem/NavItem'
 import { navbarList } from '../../navbarList'
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import Input from '../Input/Input'
+import Button from '../Button/Button'
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
@@ -26,12 +29,46 @@ const Footer = () => {
     };
   }, []);
 
+  const [email, setEmail] = useState('');
+  const isFormValid = email.trim() !== '';
+  const notify = () => toast.success("Message sent");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setEmail('');
+  }
+
   return (
     <section className='footer-section'>
       <footer className='footer container-block mob-pad'>
         {!isMobile ? (
           <div className="footer-nav">
-            <ReactSVG src={footerLogo} className='footer-logo' />
+            <div className='footer-form'>
+              <ReactSVG src={footerLogo} className='footer-logo' />
+
+                <form className='contact-container contact-container-footer' onSubmit={handleSubmit}>
+                  <Input
+                    placeholder='Email'
+                    corner='#131514'
+                    border='#7F7F7F'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    pad='6px 0 6px 0'
+                  />
+
+                  <div className='contact-btn-block'>
+                    <Button
+                      name='Send'
+                      color='#277F4D'
+                      type='primary'
+                      width='100%'
+                      onClick={notify}
+                      height='30px'
+                      disabled={!isFormValid}
+                    />
+                  </div>
+                </form>
+            </div>
 
             <div className="footer-nav-items">
               <div className="footer-nav-item">
@@ -44,7 +81,7 @@ const Footer = () => {
               </div>
 
               <div className="footer-nav-item">
-                <h6 className="nav-item-title">Contants</h6>
+                <h6 className="nav-item-title">Contact Us</h6>
                 <ul className='nav-item-list nav-item-list--mobile'>
                   <li className='nav-item-list-item'>info@united.com</li>
                   <li className='nav-item-list-item'>(406) 555-0120</li>
@@ -83,7 +120,7 @@ const Footer = () => {
               }
             />
             <AccordionFooter
-              title="Contacts"
+              title="Contact Us"
               dropdown={
                 <>
                   <ul className='nav-item-list nav-item-list--mobile'>

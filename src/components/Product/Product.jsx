@@ -15,7 +15,7 @@ const Product = ({
       <h3 className='product-title'>{title}</h3>
       <h4 className='product-subtitle'>{subtitle}</h4>
       <p className="product-text">{text}</p>
-      <Link className='product-learn'>Learn more</Link>
+      <Link to='/signup' className='product-learn'>Learn more</Link>
     </div>
   )
 }

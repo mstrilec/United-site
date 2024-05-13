@@ -166,6 +166,7 @@
 }
 
 .work-plan{
+    position: relative;
     justify-content: center;
     text-align: center;
 }
@@ -376,6 +377,21 @@
     display: flex;
     justify-content: center;
     padding: 106px 120px;
+}
+
+.work-plan-left-vector {
+    position: absolute;
+}
+
+.work-plan-right-vector {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.work-plan-mobile-vector {
+    position: absolute;
+    display: none;
 }
 
 @media( max-width: 1300px){
@@ -815,7 +831,18 @@
         padding-top: 24px;
     }
 
-    
+    .work-plan-left-vector {
+        display: none;
+    }
+
+    .work-plan-right-vector {
+        display: none;
+    }
+
+    .work-plan-mobile-vector {
+        display: block;
+        right: 0;
+    }
 }
 
 

@@ -284,6 +284,10 @@
   gap: 45px;
 }
 
+.contact-btn-block {
+  width: 100%;
+}
+
 @media (max-width: 1545px) {
   .explore-card {
     width: auto;

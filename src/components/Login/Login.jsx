@@ -44,6 +44,7 @@ const Login = () => {
             span='soon'
             corner='#fff'
             className='signIn-button'
+            disabled={true}
           />
           <p className='signIn-forgot'>Don't have an account? <Link to='/signup' className='header-button-link'><span className='signIn-signup'>Sign up</span></Link></p>
           <div className="signIn-stay">
