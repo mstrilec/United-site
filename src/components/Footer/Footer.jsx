@@ -9,6 +9,7 @@ import AccordionFooter from '../AccordionFooter/AccordionFooter'
 import footerLogoMobile from '../../assets/footer-logo.png'
 import NavItem from '../NavItem/NavItem'
 import { navbarList } from '../../navbarList'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
@@ -52,8 +53,8 @@ const Footer = () => {
                 </ul>
 
                 <div className='footer-apps footer-apps--mobile'>
-                  <ReactSVG src={footerFb} />
-                  <ReactSVG src={footerTg} />
+                  <Link to='https://www.facebook.com/vorticunited/'><ReactSVG src={footerFb} /></Link>
+                  <Link to='https://t.me/vorticunited'><ReactSVG src={footerTg} /></Link>
                 </div>
               </div>
 

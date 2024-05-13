@@ -374,6 +374,7 @@
 
 .copytrading-container {
     display: flex;
+    justify-content: center;
     padding: 106px 120px;
 }
 
