@@ -95,7 +95,7 @@
   gap: 32px;
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1000px) {
   .footer {
     width: 100%;
     padding: 31px 20px;

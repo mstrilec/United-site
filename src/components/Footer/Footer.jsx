@@ -11,11 +11,11 @@ import NavItem from '../NavItem/NavItem'
 import { navbarList } from '../../navbarList'
 
 const Footer = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1265);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1265);
+      setIsMobile(window.innerWidth <= 1000);
     };
 
     window.addEventListener('resize', handleResize);

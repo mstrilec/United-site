@@ -109,7 +109,7 @@
 
 @media (max-width: 1310px) {
   .signIn {
-    padding: 151px 24px;
+    padding: 100px 24px 200px 24px;
   }
 
   .signIn-bg {

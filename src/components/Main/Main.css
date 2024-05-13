@@ -294,7 +294,19 @@
   display: none;
 }
 
-@media (max-width: 1265px) {
+@media (max-width: 1348px) {
+  .product-item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .product-item {
+    width: 260px;
+  }
+}
+
+@media (max-width: 1000px) {
   .main-block {
     position: relative;
     width: 100%;
