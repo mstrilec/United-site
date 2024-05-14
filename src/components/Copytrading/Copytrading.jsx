@@ -193,15 +193,15 @@ const Copytrading = () => {
             
             <div className='plans-subtitle'>
                 Copy Trading is built to be simple and intuitive. Just find the trader you wish to copy<br/>
-                Trading [linked to login/signup page] page – there, you can search for<br/>
+                through the <Link to='/signup' className="plans-subtitle-span">Copy Trading</Link> page – there, you can search for<br/>
                 the kind of trader you’re looking for.
             </div>
 
             <div className='plans-subtitle mobile-plans'>
                 Copy Trading is built to be simple and <br/>
                 intuitive. Just find the trader you wish to<br/>
-                copy Trading [linked to<br/>
-                login/signup page] page – there, you can<br/>
+                copy through the <Link to='/signup' className="plans-subtitle-span">Copy Trading</Link><br/>
+                page – there, you can<br/>
                 search for the kind of trader you’re<br/> 
                 looking for.
             </div>

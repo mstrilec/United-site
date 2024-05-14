@@ -95,7 +95,7 @@
 }
 
 .footer-form {
-  width: 25%;
+  width: 18%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +108,14 @@
 .contact-container-footer {
   width: 100% !important;
   gap: 16px !important;
+}
+
+.terms-and-policy {
+  cursor: pointer;
+}
+
+.terms-and-policy:hover {
+  text-decoration: underline;
 }
 
 

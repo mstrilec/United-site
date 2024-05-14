@@ -394,6 +394,16 @@
     display: none;
 }
 
+.plans-subtitle-span {
+    color: #404040;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.plans-subtitle-span:hover {
+    text-decoration: underline;
+}
+
 @media( max-width: 1300px){
     .test-text-mob,
     .subtitle-test-mob{
@@ -842,6 +852,7 @@
     .work-plan-mobile-vector {
         display: block;
         right: 0;
+        z-index: -1;
     }
 }
 

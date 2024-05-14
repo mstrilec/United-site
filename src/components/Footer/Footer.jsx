@@ -13,6 +13,10 @@ import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
+import 'reactjs-popup/dist/index.css';
+import Popup from 'reactjs-popup'
+import Terms from '../Terms/Terms'
+import Policy from '../Policy/Policy'
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
@@ -44,30 +48,7 @@ const Footer = () => {
         {!isMobile ? (
           <div className="footer-nav">
             <div className='footer-form'>
-              <ReactSVG src={footerLogo} className='footer-logo' />
-
-                <form className='contact-container contact-container-footer' onSubmit={handleSubmit}>
-                  <Input
-                    placeholder='Email'
-                    corner='#131514'
-                    border='#7F7F7F'
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    pad='6px 0 6px 0'
-                  />
-
-                  <div className='contact-btn-block'>
-                    <Button
-                      name='Send'
-                      color='#277F4D'
-                      type='primary'
-                      width='100%'
-                      onClick={notify}
-                      height='30px'
-                      disabled={!isFormValid}
-                    />
-                  </div>
-                </form>
+              <img src={footerLogoMobile} className='footer-logo' />
             </div>
 
             <div className="footer-nav-items">
@@ -79,12 +60,30 @@ const Footer = () => {
                     })}
                   </ul>
               </div>
-
+              <div className="footer-nav-item">
+                <h6 className="nav-item-title">Futures information</h6>
+                <ul className='nav-item-list nav-item-list--mobile'>
+                  <Popup 
+                  trigger={<li className='nav-item-list-item terms-and-policy'>Terms & conditions </li>} 
+                  modal
+                  nested
+                  >
+                    {(close) => <Terms close={close} />}
+                  </Popup>
+                  <Popup 
+                    trigger={<li className='nav-item-list-item terms-and-policy'>Privacy Policy</li>} 
+                    modal
+                    nested
+                  >
+                    {(close) => <Policy close={close} />}
+                  </Popup>
+                </ul>
+              </div>
+              
               <div className="footer-nav-item">
                 <h6 className="nav-item-title">Contact Us</h6>
                 <ul className='nav-item-list nav-item-list--mobile'>
                   <li className='nav-item-list-item'>info@united.com</li>
-                  <li className='nav-item-list-item'>567 Pine Road, Riverdale, NY</li>
                 </ul>
 
                 <div className='footer-apps footer-apps--mobile'>
@@ -92,42 +91,12 @@ const Footer = () => {
                   <Link to='https://t.me/vorticunited'><ReactSVG src={footerTg} /></Link>
                 </div>
               </div>
-
-              <div className="footer-nav-item">
-                <h6 className="nav-item-title">Futures information</h6>
-                <ul className='nav-item-list nav-item-list--mobile'>
-                  <li className='nav-item-list-item'>Terms & conditions </li>
-                  <li className='nav-item-list-item'>Privacy Policy</li>
-                </ul>
-              </div>
             </div>
           </div>
         ) : (
           <div className='footer-mobile'>
             <div className="footer-form">
               <img src={footerLogoMobile} className='footer-logo' />
-              <form className='contact-container contact-container-footer' onSubmit={handleSubmit}>
-                <Input
-                  placeholder='Email'
-                  corner='#131514'
-                  border='#7F7F7F'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  pad='6px 0 6px 0'
-                />
-
-                <div className='contact-btn-block'>
-                  <Button
-                    name='Send'
-                    color='#277F4D'
-                    type='primary'
-                    width='100%'
-                    onClick={notify}
-                    height='30px'
-                    disabled={!isFormValid}
-                  />
-                </div>
-              </form>
             </div>
             <AccordionFooter
               title="About"
@@ -147,9 +116,6 @@ const Footer = () => {
                 <>
                   <ul className='nav-item-list nav-item-list--mobile'>
                     <li className='nav-item-list-item'>info@united.com</li>
-                    <li className='nav-item-list-item'>(406) 555-0120</li>
-                    <li className='nav-item-list-item'>(808) 555-0910</li>
-                    <li className='nav-item-list-item'>567 Pine Road, Riverdale, NY</li>
                   </ul>
                 </>
               }
@@ -159,8 +125,20 @@ const Footer = () => {
               dropdown={
                 <>
                   <ul className='nav-item-list nav-item-list--mobile'>
-                    <li className='nav-item-list-item'>Terms & conditions </li>
-                    <li className='nav-item-list-item'>Privacy Policy</li>
+                    <Popup 
+                      trigger={<li className='nav-item-list-item'>Terms & conditions </li>} 
+                      modal
+                      nested
+                    >
+                      {(close) => <Terms close={close} />}
+                    </Popup>
+                    <Popup 
+                      trigger={<li className='nav-item-list-item'>Privacy Policy</li>} 
+                      modal
+                      nested
+                    >
+                      {(close) => <Policy close={close} />}
+                    </Popup>
                   </ul>
                 </>
               }

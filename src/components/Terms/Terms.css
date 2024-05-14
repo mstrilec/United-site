@@ -1,0 +1,50 @@
+.popup-content {
+  border: none !important;
+  background: none !important;
+}
+
+.terms-modal {
+  height: auto;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 16px;
+  color: #000;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.terms-modal-policy {
+  height: 800px;
+}
+
+.terms-header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.terms-content {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.terms-close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+@media (max-width: 1000px) {
+  .popup-content  {
+    width: 100%;
+  }
+}
