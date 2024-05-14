@@ -23,7 +23,7 @@
   font-weight: 500;
   font-family: 'Maison Neue';
   font-style: normal;
-  src: url('./fonts/MaisonNeueDemi.otf') format("opentype");
+  src: url('./fonts/MaisonNeueMedium.otf') format("opentype");
   font-display: swap;
 }
 @font-face {

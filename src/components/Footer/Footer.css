@@ -118,6 +118,10 @@
   text-decoration: underline;
 }
 
+.scroll-off {
+  overflow-y: hidden;
+}
+
 
 @media (max-width: 1225px) {
   .mob-pad {

@@ -5,7 +5,7 @@ const Terms = ({ close }) => {
   return (
     <div className="terms-modal">
       <button className="terms-close" onClick={close}>
-        &times;
+        <span>&times;</span>
       </button>
       <h2 className="terms-header">Terms & conditions:</h2>
       <p className="terms-content">

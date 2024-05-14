@@ -4,7 +4,7 @@ const Policy = ({ close }) => {
   return (
     <div className="terms-modal terms-modal-policy">
       <button className="terms-close" onClick={close}>
-        &times;
+        <span>&times;</span>
       </button>
       <h2 className="terms-header">Privacy Policy:</h2>
       <p className="terms-content">

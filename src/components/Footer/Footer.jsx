@@ -33,6 +33,14 @@ const Footer = () => {
     };
   }, []);
 
+  const handlePopupOpen = () => {
+    document.querySelector('body')?.classList.add('scroll-off');
+  }
+
+  const handlePopupClose = () => {
+    document.querySelector('body')?.classList.remove('scroll-off');
+  }
+
   const [email, setEmail] = useState('');
   const isFormValid = email.trim() !== '';
   const notify = () => toast.success("Message sent");
@@ -67,6 +75,8 @@ const Footer = () => {
                   trigger={<li className='nav-item-list-item terms-and-policy'>Terms & conditions </li>} 
                   modal
                   nested
+                  onOpen={handlePopupOpen}
+                  onClose={handlePopupClose}
                   >
                     {(close) => <Terms close={close} />}
                   </Popup>
@@ -74,12 +84,14 @@ const Footer = () => {
                     trigger={<li className='nav-item-list-item terms-and-policy'>Privacy Policy</li>} 
                     modal
                     nested
+                    onOpen={handlePopupOpen}
+                    onClose={handlePopupClose}
                   >
                     {(close) => <Policy close={close} />}
                   </Popup>
                 </ul>
               </div>
-              
+
               <div className="footer-nav-item">
                 <h6 className="nav-item-title">Contact Us</h6>
                 <ul className='nav-item-list nav-item-list--mobile'>
@@ -129,6 +141,8 @@ const Footer = () => {
                       trigger={<li className='nav-item-list-item'>Terms & conditions </li>} 
                       modal
                       nested
+                      onOpen={handlePopupOpen}
+                      onClose={handlePopupClose}
                     >
                       {(close) => <Terms close={close} />}
                     </Popup>
@@ -136,6 +150,8 @@ const Footer = () => {
                       trigger={<li className='nav-item-list-item'>Privacy Policy</li>} 
                       modal
                       nested
+                      onOpen={handlePopupOpen}
+                      onClose={handlePopupClose}
                     >
                       {(close) => <Policy close={close} />}
                     </Popup>
