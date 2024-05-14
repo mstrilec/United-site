@@ -25,7 +25,7 @@ const Header = () => {
         </Link>
         <Link to='/signup' className='header-button-link'>
           <Button
-            name='Sign in'
+            name='Sign up'
             color='#277F4D'
             type='primary'
             corner='#fff'
