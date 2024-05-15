@@ -95,7 +95,7 @@ const Footer = () => {
               <div className="footer-nav-item">
                 <h6 className="nav-item-title">Contact Us</h6>
                 <ul className='nav-item-list nav-item-list--mobile'>
-                  <li className='nav-item-list-item'>info@united.com</li>
+                  <li className='nav-item-list-item'>info@vortic-united.com</li>
                 </ul>
 
                 <div className='footer-apps footer-apps--mobile'>
@@ -127,7 +127,7 @@ const Footer = () => {
               dropdown={
                 <>
                   <ul className='nav-item-list nav-item-list--mobile'>
-                    <li className='nav-item-list-item'>info@united.com</li>
+                    <li className='nav-item-list-item'>info@vortic-united.com</li>
                   </ul>
                 </>
               }
