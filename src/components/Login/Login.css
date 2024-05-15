@@ -110,7 +110,7 @@
 
 @media (max-width: 1310px) {
   .signIn {
-    padding: 52px 24px 200px 24px;
+    padding: 36px 24px 200px 24px;
   }
 
   .signIn-bg {
@@ -121,11 +121,11 @@
     align-items: center;
     width: 100%;
     padding: 0;
-    padding-top: 32px;
+    padding-top: 22px;
   }
 
   .signIn-logo {
-    padding-top: 32px;
+    padding-top: 22px;
   }
 
   .login-soon {

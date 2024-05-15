@@ -9,7 +9,7 @@ const TimerLogin = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date('Jul 25, 2024 00:00:00').getTime();
+    const countdownDate = new Date('Jun 25, 2024 00:00:00').getTime();
   
     interval.current = setInterval(() => {
       const now = new Date().getTime();
