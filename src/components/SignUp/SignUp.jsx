@@ -9,6 +9,7 @@ import key from '../../assets/key.svg'
 import signUpBg from '../../assets/signUpBg.png'
 import { Link } from 'react-router-dom'
 import Input from '../Input/Input'
+import TimerLogin from '../TimerLogin/TimerLogin'
 
 
 const SignUp = () => {
@@ -18,6 +19,8 @@ const SignUp = () => {
           <img src={signUpBg} className='signIn-bg' />
       </div>
       <div className='signIn'>
+        <TimerLogin />
+        <span className='login-soon'>coming soon</span>
         <Link to='/home' className='signIn-logo'><ReactSVG src={logo} /></Link>
 
         <div className="signIn-block">

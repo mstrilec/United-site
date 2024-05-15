@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   padding: 144px 0 345px 0;
+  align-items: center;
 }
 
 .signIn-logo {
@@ -109,7 +110,7 @@
 
 @media (max-width: 1310px) {
   .signIn {
-    padding: 100px 24px 200px 24px;
+    padding: 52px 24px 200px 24px;
   }
 
   .signIn-bg {

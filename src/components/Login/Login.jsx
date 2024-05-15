@@ -8,6 +8,7 @@ import key from '../../assets/key.svg'
 import signInBg from '../../assets/signIn-bg.png'
 import { Link } from 'react-router-dom'
 import Input from '../Input/Input'
+import TimerLogin from '../TimerLogin/TimerLogin'
 
 const Login = () => {
   return (
@@ -16,6 +17,7 @@ const Login = () => {
           <img src={signInBg} className='signIn-bg' loading="lazy" />
       </div>
       <div className='signIn'>
+        <TimerLogin />
         <span className='login-soon'>coming soon</span>
         <Link to='/home' className='signIn-logo'><ReactSVG src={logo} /></Link>
 
